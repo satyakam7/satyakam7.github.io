@@ -1,8 +1,11 @@
-# Dev-backen
+# Dev-backend
+
+-------instructions----------
 devclub backend assignment with sample database table for prof sys.
+download the repo
+then rename it from satyakam7/github.io to profrev
+move the folder to htdocs folder in xampp 
 
-
-instructions:
 install XAMPP for respective os.
 create databases with name cms and profrev on phpmyadmin at http://localhost
 import sql from the db folder given
@@ -15,6 +18,13 @@ uname: admin
 pass: admin
 
 No extra files needed to be installed.
+
+
+
+
+
+
+
 
 --------------Answrs to ques.-------------
 Satyakam
