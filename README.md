@@ -12,7 +12,7 @@ then rename it from satyakam7/github.io to profrev
 move the folder to htdocs folder in xampp 
 
 create databases with name cms and profrev on phpmyadmin at http://localhost
-import sql from the db folder given
+import sql from the cms(1).sql and profrev.sql files given
 go to http://localhost/profrev
 
 for admin privileges:
