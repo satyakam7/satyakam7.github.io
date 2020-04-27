@@ -1,0 +1,48 @@
+.section--code {
+  overflow: hidden;
+  background-color: #222; }
+  .section--code .wrapper {
+    position: relative; }
+  .section--code .section--code--intro {
+    transform: translateY(-50%);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%; }
+  .section--code .section-header {
+    font-size: calc(26px + 64 * ((100vw - 600px) / 1400));
+    line-height: calc(28px + 66 * ((100vw - 600px) / 1400));
+    letter-spacing: calc(-0.1px + -1.7 * ((100vw - 600px) / 1400));
+    font-family: "Maison Neue Bold"; }
+    @media screen and (max-width: 600px) {
+      .section--code .section-header {
+        font-size: 26px; } }
+    @media screen and (min-width: 2000px) {
+      .section--code .section-header {
+        font-size: 90px; } }
+    @media screen and (max-width: 600px) {
+      .section--code .section-header {
+        line-height: 28px; } }
+    @media screen and (min-width: 2000px) {
+      .section--code .section-header {
+        line-height: 94px; } }
+    @media screen and (max-width: 600px) {
+      .section--code .section-header {
+        letter-spacing: -0.1px; } }
+    @media screen and (min-width: 2000px) {
+      .section--code .section-header {
+        letter-spacing: -1.8px; } }
+    .section--code .section-header .code-text-element {
+      float: left; }
+  .section--code .code-container {
+    transform: translateY(-50%);
+    transform-origin: left;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    perspective: 1000px; }
+    .section--code .code-container img {
+      transform-origin: right; }
+
+/*# sourceMappingURL=../_maps/components/section-code.css.map */

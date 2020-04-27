@@ -1,0 +1,136 @@
+.section--heroes {
+  position: relative;
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  color: #222; }
+  .section--heroes .intro-wrapper {
+    padding-top: 25vh; }
+  .section--heroes .section--heroes--intro {
+    width: 100%;
+    float: left;
+    margin-bottom: 70px; }
+  .section--heroes .section-header {
+    font-size: calc(70px + 280 * ((100vw - 600px) / 1400));
+    line-height: calc(75px + 285 * ((100vw - 600px) / 1400));
+    letter-spacing: calc(-2px + -5 * ((100vw - 600px) / 1400));
+    font-family: "Maison Neue Bold";
+    margin-left: calc(-4px + -21 * ((100vw - 600px) / 1400));
+    margin-bottom: 50px; }
+    @media screen and (max-width: 600px) {
+      .section--heroes .section-header {
+        font-size: 70px; } }
+    @media screen and (min-width: 2000px) {
+      .section--heroes .section-header {
+        font-size: 350px; } }
+    @media screen and (max-width: 600px) {
+      .section--heroes .section-header {
+        line-height: 75px; } }
+    @media screen and (min-width: 2000px) {
+      .section--heroes .section-header {
+        line-height: 360px; } }
+    @media screen and (max-width: 600px) {
+      .section--heroes .section-header {
+        letter-spacing: -2px; } }
+    @media screen and (min-width: 2000px) {
+      .section--heroes .section-header {
+        letter-spacing: -7px; } }
+    @media screen and (max-width: 600px) {
+      .section--heroes .section-header {
+        margin-left: -4px; } }
+    @media screen and (min-width: 2000px) {
+      .section--heroes .section-header {
+        margin-left: -25px; } }
+    @media (max-width: 1024px) {
+      .section--heroes .section-header {
+        margin-bottom: 30px; } }
+    @media (max-width: 600px) {
+      .section--heroes .section-header {
+        margin-bottom: 20px; } }
+  .section--heroes .section-text {
+    width: 40.301%;
+    float: left;
+    margin-left: 17.05686%; }
+    @media (max-width: 1700px) {
+      .section--heroes .section-text {
+        width: 48.82943%;
+        float: left; } }
+    @media (max-width: 1450px) {
+      .section--heroes .section-text {
+        width: 65.88629%;
+        float: left; } }
+    @media (max-width: 1024px) {
+      .section--heroes .section-text {
+        width: 82.94314%;
+        float: left; } }
+    @media (max-width: 600px) {
+      .section--heroes .section-text {
+        width: 100%;
+        margin-left: 0; } }
+  .section--heroes .heroes-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%; }
+  .section--heroes .heroes-container--inner {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
+    float: left; }
+  .section--heroes .hero-element {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0;
+    overflow: hidden;
+    display: none; }
+    .section--heroes .hero-element:first-child {
+      display: block; }
+    .section--heroes .hero-element .hero-element--title {
+      font-size: calc(50px + 100 * ((100vw - 600px) / 800));
+      line-height: calc(48px + 92 * ((100vw - 600px) / 800));
+      letter-spacing: calc(-1px + -2 * ((100vw - 600px) / 800));
+      font-family: "Maison Neue Bold";
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      opacity: 0; }
+      @media screen and (max-width: 600px) {
+        .section--heroes .hero-element .hero-element--title {
+          font-size: 50px; } }
+      @media screen and (min-width: 1400px) {
+        .section--heroes .hero-element .hero-element--title {
+          font-size: 150px; } }
+      @media screen and (max-width: 600px) {
+        .section--heroes .hero-element .hero-element--title {
+          line-height: 48px; } }
+      @media screen and (min-width: 1400px) {
+        .section--heroes .hero-element .hero-element--title {
+          line-height: 140px; } }
+      @media screen and (max-width: 600px) {
+        .section--heroes .hero-element .hero-element--title {
+          letter-spacing: -1px; } }
+      @media screen and (min-width: 1400px) {
+        .section--heroes .hero-element .hero-element--title {
+          letter-spacing: -3px; } }
+    .section--heroes .hero-element .hero-element--images {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0 calc(50% - 50vw);
+      padding: 0 calc(50vw - 50%); }
+    .section--heroes .hero-element .hero-element--images--image {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
+/*# sourceMappingURL=../_maps/components/section-heroes.css.map */
