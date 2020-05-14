@@ -537,7 +537,6 @@ body * {
 
 .bgImage {
   position: absolute;
-  background-image: url(https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?ixlib=rb-0.3.5&s=e20bc3d490c974d9ea190e05c47962f5&auto=format&fit=crop&w=634&q=80);
   background-size: cover;
   background-position: top;
   -webkit-filter: grayscale(70%);
@@ -549,7 +548,7 @@ body * {
 .blobCont {
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 750px;
 }
 
 .blob:nth-child(1) {
