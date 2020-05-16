@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Monoton);
+@import url(https://fonts.googleapis.com/css?family=Great+Vibes);
+
 body {
   
 }
@@ -195,3 +198,4 @@ body {
 .icon-bubble:hover {
   fill: #ff4d4d;
 }
+

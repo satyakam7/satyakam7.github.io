@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
 
 body {
-    background: #0a2a43;
+    background: rgb(10,42,67);
+    background: linear-gradient(180deg, rgba(10,42,67,1) 32%, rgba(0,106,255,0.9906337535014006) 45%, rgba(109,168,161,1) 60%, rgba(255,220,0,1) 74%, rgba(255,194,0,1) 88%);
 
 
 }
