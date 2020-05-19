@@ -588,3 +588,9 @@ background-size:100%;
 }
 
 /*************footer End*****************/
+
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
