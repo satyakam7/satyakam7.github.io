@@ -756,12 +756,12 @@ background-image: linear-gradient(147deg, #000000 0%, #04619f 74%);
           transition-duration: 0.18s;
 }
 .circular-menu__item:hover {
-  color: #dc143c;
-  background: #f08080;
+  color: #1750a5;
+  background: #80bef0;
 }
 .circular-menu__item:active,
 .circular-menu__item:focus {
-  color: #8b0000;
+  color: #00648b;
 }
 
 
