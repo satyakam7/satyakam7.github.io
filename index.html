@@ -5,11 +5,28 @@
   <title>Saty's Blog</title>
   <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/style2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
 
 <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'>
+<link
+href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap&subset=latin-ext"
+rel="stylesheet"
+/>
 
 </head>
 <body>
+  <svg class="cursor" width="75" height="75" viewBox="0 0 140 140">
+    <defs>
+      <filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
+        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="10" result="warp"></feTurbulence>
+        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="60" in="SourceGraphic" in2="warp"></feDisplacementMap>
+      </filter>
+    </defs>
+    <circle class="cursor-circle" cx="70" cy="70" r="10"></circle>
+  </svg>
 <div class="container1">
   <div class="topp">
     <div class="upper section"><img class="image image2"></div>
@@ -17,7 +34,14 @@
     </div>
     <div class="lower section"><img class="image image1"></div>
   </div>
-   
+  <nav class="circular-menu">
+    <input class="circular-menu__button" id="circular-menu" type="checkbox" href="javascript: void 0" checked="checked"/>
+    <label class="circular-menu__icon" for="circular-menu">
+      <div class="hamburger hamburger-bar"></div>
+      <div class="hamburger hamburger-bar"></div>
+      <div class="hamburger hamburger-bar"></div>
+    </label><a class="circular-menu__item" href="#"><i class="fa fa-book"></i></a><a class="circular-menu__item" href="#"><i class="fa fa-home"></i></a><a class="circular-menu__item" href="#"><i class="fa fa-user"></i></a><a class="circular-menu__item" href="#"><i class="fa fa-coffee"></i></a><a class="circular-menu__item" href="#"><i class="fa fa-quora"></i></a>
+  </nav>
 									
 	<div class="switch">
 		<div class="circle"></div>
@@ -95,6 +119,13 @@
   </symbol>
 </defs>
 </svg>  -->
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 <div class="blog-container">
   <br>
   <div class="blog-body">
@@ -172,6 +203,7 @@
       <h3>Not-So Imp</h3> <li>Complete the Book(Kite Runner)</li><li>Complete the pending poem</li><li>Bleh :/</li>
   <p>	This makes me think why dont I make a bucket list ;) . Sounds quite intuitive. Not now though .-. ofc got more important things to do... 	As this listing priorities thing isnt working out either. Well, isse yaad aaya LIMITLESS is a quite awesome series...
     </p>
+    
     </div>
     <div class="blog-tags">
       <ul>
@@ -343,6 +375,8 @@
         <li class="published-date">Undefined</li>
       </ul>
     </div>
+   
+	
   </div>
   <!-- <div class="blog-container">
     <div class="blog-header">
@@ -461,10 +495,12 @@
 	</div>
 </footer>
 
+
   <script  src="js/script.js"></script>
  <script src='js/jquery.js'></script>
  <script src="js/script1.js"></script>
-  <script src="js/script2.js"></script>
-
+ <script src="js/script2.js"></script>
+  <script src="js/player.js"></script> 
+ 
 </body>
 </html>
