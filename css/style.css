@@ -92,11 +92,11 @@ body {
 }
 
 .blog-container {
-  background: #fff;
+  background: rgb(210, 235, 250);
   border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.2) 4px 4px 4px 4px;
+  box-shadow: rgba(22, 34, 99, 0.363) 4px 4px 4px 4px;
   font-family: "adelle-sans", sans-serif;
-  font-weight: 100;
+  font-weight: 500;
   margin: 48px auto;
   width: 20rem;
 }
@@ -122,7 +122,7 @@ body {
 
 
 .blog-cover {
-  background: url("../assets/yosemite-3.jpg");
+  /* background: url("../assets/yosemite-3.jpg"); */
   background-size: cover;
   border-radius: 5px 5px 0 0;
   height: 15rem;
@@ -150,15 +150,6 @@ body {
   width: 32px;
 }
 
-.blog-author h3 {
-  color: #fff;
-  font-weight: 100;
-}
-
-.blog-author--no-cover h3 {
-  color: #999999;
-  font-weight: 100;
-}
 
 .blog-body {
   margin: 0 auto;
@@ -212,7 +203,7 @@ body {
   color: black;
 }
 .blog-footer {
-  border-top: 1px solid #e6e6e6;
+  border-top: 1px solid #1320d6b9;
   margin: 0 auto;
   padding-bottom: .125rem;
   width: 80%;
@@ -387,12 +378,6 @@ body {
   position: relative;
   z-index: 2;
 }
-
-
-.new_footer_area {
-  background: #fff;
-}
-
 
 .new_footer_top {
   padding: 120px 0px 270px;
