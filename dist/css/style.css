@@ -143,10 +143,17 @@ body {
     border-radius: 5px 5px 0 0;
     height: 15rem;
     box-shadow: inset rgba(0, 0, 0, 0.2) 0 64px 64px 16px
+}.blog-cover2 {
+    background: url('https://images.unsplash.com/photo-1527099908998-5b73a5fe2a0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    height: 15rem;
+    box-shadow: inset rgba(0, 0, 0, 0.2) 0 64px 64px 16px
 }
 
+
 .blog-cover {
-    background: url('');
+    background: url('https://cache.desktopnexus.com/thumbseg/1123/1123931-bigthumbnail.jpg');
     background-size: cover;
     border-radius: 5px 5px 0 0;
     height: 15rem;
