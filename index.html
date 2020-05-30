@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta refresh = "5" 
+    <title>Saty's Blog (Welcome)</title>
+    <link rel="stylesheet" href="master.css">
+    <script src="jquery.js"></script>
+    <script src="t.min.js"></script>
+</head>
+<body>
+
+    <div id="main">
+Saty's Blog %<ins><span id="pow-txt">---LOADING</span></ins>
+<span id="tagline">Welcome to my daily life blog<ins>1.5</ins><br>This is sort of a life journal I write at the end of the day which is mostly 4 AM for me<br>Also, I try to be as original I can be with all the thought process and the things I did experience during the whole day</span><del></del><del id="pow-trigger"></del> \\Loading...
+    </div>
+
+    <script>
+    
+    $('#main').t({
+ beep:true,
+ caret:'<span style="color:hotpink;">•</span>',
+ typing:function(elm,chr){
+
+   if(chr.match(/\-trigger/))
+     $('#pow-txt').show().delay(500).fadeOut(0);
+  
+ }
+});
+
+    </script>
+    <script>
+        var timer = setTimeout(function () {
+            window.location = 'dist/index.html'
+        }, 25000);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

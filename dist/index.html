@@ -3,1062 +3,998 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Saty's Blog</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style2.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="./style3.css">
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap'>
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
-  <link rel="stylesheet" href="./style.css">
-  <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'>
-  <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap&subset=latin-ext" rel="stylesheet" />
+  <title> </title>
+  <link rel="stylesheet" href="includes/css/style.css"><link rel="stylesheet" href="includes/css//music.css">
+
+  <script src="includes/js/modernizer.js" type="text/javascript"></script>
+  <script src="https://cdn.rawgit.com/bradley/Blotter/master/build/blotter.min.js"></script>
+  <script src="https://rawgit.com/bradley/Blotter/master/build/materials/liquidDistortMaterial.js"></script>
+
+<link rel="stylesheet" href="includes/css/normalize.css">
+
 </head>
 
-<body><svg class="cursor" width="75" height="75" viewBox="0 0 140 140">
-    <defs>
-      <filter id="filter-1" x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox">
-        <feTurbulence type="fractalNoise" baseFrequency="0" numOctaves="10" result="warp"></feTurbulence>
-        <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="60" in="SourceGraphic" in2="warp">
-        </feDisplacementMap>
-      </filter>
-    </defs>
-    <circle class="cursor-circle" cx="70" cy="70" r="10"></circle>
-  </svg>
-  <div class="container1">
-    <div class="topp">
-      <div class="upper section"><img class="image image2"></div>
-      <div class="mid section">
-        <div class="top-title">Saty's Blog</div>
-      </div>
-      <div class="lower section"><img class="image image1"></div>
+<body>
+  <div id="particles-js">
+    <div id="main"></div>
+    
+<div class="blog-container">
+  
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>And Then Everything was just SORTED</a></h1>
     </div>
-    <nav class="circular-menu"><input class="circular-menu__button" id="circular-menu" type="checkbox"
-        href="javascript: void 0" checked="checked" /><label class="circular-menu__icon" for="circular-menu">
-        <div class="hamburger hamburger-bar"></div>
-        <div class="hamburger hamburger-bar"></div>
-        <div class="hamburger hamburger-bar"></div>
-      </label><a class="circular-menu__item" href="#"><i class="fa fa-book"></i></a><a class="circular-menu__item"
-        href="#"><i class="fa fa-home"></i></a><a class="circular-menu__item" href="#"><i class="fa fa-user"></i></a><a
-        class="circular-menu__item" href="#"><i class="fa fa-coffee"></i></a><a class="circular-menu__item" href="#"><i
-          class="fa fa-quora"></i></a></nav>
-    <div class="switch">
-      <div class="circle"></div>
-    </div>
-    <div id="particles-js"></div>
-    <div class="progress-wrap"><svg class="progress-circle svg-content" width="100%" height="100%"
-        viewBox="-1 -1 102 102">
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" /></svg></div>
-    <!--<div class="wrapper"><div class="navbar"><div href="./index.html" class="navbar__item -blue"><span href="./index.html" class="navbar__icon"><svg href="./index.html" class="icon"><use xlink:href="#icon-home"></use></svg></span></div><div class="navbar__item -orange"><span class="navbar__icon"><svg class="icon"><use xlink:href="#icon-cup"></use></svg></span></div><div class="navbar__item -navy-blue"><span class="navbar__icon"><svg class="icon"><use xlink:href="#icon-plus"></use></svg></span></div><div class="navbar__item -yellow"><span class="navbar__icon"><svg class="icon"><use xlink:href="#icon-search"></use></svg></span></div><div class="navbar__item -purple"><span class="navbar__icon"><svg class="icon"><use xlink:href="#icon-user"></use></svg></span></div></div></div><svg style="display:none" xmlns="http://www.w3.org/2000/svg" hidden xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="icon-plus" viewBox="0 0 32 32"><title>plus</title><path d="M32 14.4v3.2c0 0.8-0.64 1.44-1.44 1.44h-11.68v11.52c0 0.8-0.64 1.44-1.44 1.44h-3.040c-0.8 0-1.44-0.64-1.44-1.44v-11.52h-11.52c-0.8 0-1.44-0.64-1.44-1.44v-3.2c0-0.8 0.64-1.44 1.44-1.44h11.68v-11.52c-0.16-0.8 0.48-1.44 1.28-1.44h3.2c0.8 0 1.44 0.64 1.44 1.44v11.68h11.68c0.64-0.16 1.28 0.48 1.28 1.28z"></path></symbol><symbol onclick="location.href='bucketlist.html';" id="icon-search" viewBox="0 0 32 32"><title onclick="location.href='bucketlist.html';">search</title><path d="M30.56 28.64l-5.76-5.76c2.24-2.4 3.52-5.6 3.52-9.12 0-7.52-6.24-13.76-13.76-13.76s-13.76 6.24-13.76 13.76 6.24 13.76 13.76 13.76c2.72 0 5.12-0.8 7.36-2.080l6.080 6.080c0.32 0.32 0.8 0.48 1.28 0.48s0.96-0.16 1.28-0.48c0.8-0.8 0.8-2.080 0-2.88zM4.64 13.76c0-5.44 4.48-9.92 9.92-9.92s9.92 4.48 9.92 9.92-4.48 9.92-9.92 9.92-9.92-4.48-9.92-9.92z"></path></symbol><symbol onclick="location.href='books.html';" id="icon-user" viewBox="0 0 32 32"><title>user</title><path d="M16 0.64c4.16 0 7.52 3.36 7.52 7.36 0 4.16-3.36 7.52-7.52 7.52s-7.36-3.36-7.36-7.52c-0.16-4 3.2-7.36 7.36-7.36zM16 2.56c-3.2 0-5.6 2.56-5.6 5.6s2.4 5.6 5.6 5.6 5.76-2.56 5.76-5.76-2.56-5.44-5.76-5.44z"></path><path d="M16 16.32c-2.24 0-4.16-0.8-5.76-2.4s-2.4-3.68-2.4-5.76c0-2.24 0.8-4.16 2.4-5.76s3.52-2.4 5.76-2.4c4.48 0 8.16 3.68 8.16 8.16s-3.68 8.16-8.16 8.16zM16 1.44c-1.76 0-3.52 0.64-4.8 1.92s-1.92 3.040-1.92 4.8c0 1.76 0.64 3.52 1.92 4.8s2.88 1.92 4.8 1.92c3.84 0 6.72-3.040 6.72-6.72s-3.040-6.72-6.72-6.72zM16 14.56c-3.52 0-6.4-2.88-6.4-6.4 0-1.76 0.64-3.36 1.92-4.48s2.72-1.92 4.48-1.92c3.68 0 6.4 2.72 6.4 6.4 0 1.76-0.64 3.36-1.92 4.48-1.28 1.28-2.88 1.92-4.48 1.92zM16 3.2c-1.44 0-2.56 0.48-3.52 1.44s-1.44 2.080-1.44 3.52c0 2.72 2.24 4.96 4.96 4.96 1.28 0 2.56-0.48 3.52-1.44s1.44-2.24 1.44-3.52c0-2.72-2.24-4.96-4.96-4.96z"></path><path d="M3.68 30.4c0 1.12-1.76 1.12-1.76 0v-3.68c0-4.64 3.84-8.48 8.48-8.48h11.36c4.64 0 8.48 3.84 8.48 8.48v3.68c0 1.12-1.76 1.12-1.76 0v-3.68c0-3.68-3.040-6.72-6.72-6.72h-11.36c-3.68 0-6.72 3.040-6.72 6.72v3.68z"></path><path d="M29.28 32c-0.96 0-1.6-0.64-1.6-1.6v-3.68c0-1.6-0.64-3.040-1.76-4.16s-2.56-1.76-4.16-1.76h-11.36c-1.6 0-3.040 0.64-4.16 1.76s-1.76 2.56-1.76 4.16v3.68c0 0.96-0.64 1.6-1.6 1.6s-1.6-0.64-1.6-1.6v-3.68c0-2.4 0.96-4.8 2.72-6.56 1.6-1.6 3.84-2.56 6.4-2.56h11.36c2.4 0 4.8 0.96 6.56 2.72s2.72 4 2.72 6.56v3.52c-0.16 0.96-0.8 1.6-1.76 1.6zM10.4 19.36h11.36c1.92 0 3.84 0.8 5.28 2.24s2.24 3.2 2.24 5.28v3.52c0 0 0 0.16 0.16 0.16s0.16-0.16 0.16-0.16v-3.68c0-2.080-0.8-4-2.24-5.44s-3.36-2.24-5.44-2.24h-11.52c-2.080 0-4 0.8-5.44 2.24s-2.24 3.36-2.24 5.44v3.68c0 0 0 0.16 0.16 0.16s0-0.16 0-0.16v-3.68c0-1.92 0.8-3.84 2.24-5.28 1.44-1.28 3.2-2.080 5.28-2.080z"></path></symbol><symbol id="icon-cup" viewBox="0 0 32 32"><title>cup</title><path d="M28 4h-1.28v-2.72c0-0.8-0.64-1.28-1.28-1.28h-18.72c-0.8 0-1.44 0.64-1.44 1.28v2.72h-1.28c-2.24 0-4 1.76-4 4v1.28c0 2.24 1.76 4 4 4h1.76c0.8 3.2 3.2 5.92 6.24 7.2v3.52h-1.28c-2.24 0-4 1.76-4 4v2.72c0 0.64 0.48 1.28 1.28 1.28h16c0.8 0 1.28-0.64 1.28-1.28v-2.72c0-2.24-1.76-4-4-4h-1.28v-3.52c3.2-1.28 5.44-4 6.4-7.2h1.6c2.24 0 4-1.76 4-4v-1.28c0-2.24-1.76-4-4-4zM4 10.72c-0.8 0-1.28-0.64-1.28-1.44v-1.28c0-0.8 0.64-1.28 1.28-1.28h1.28v4h-1.28zM22.72 28v1.28h-13.44v-1.28c0-0.8 0.64-1.28 1.28-1.28h10.72c0.8 0 1.44 0.48 1.44 1.28zM17.28 24h-2.56v-2.72c0.96 0.16 1.76 0.16 2.72 0v2.72zM16 18.72c-4.48 0-8-3.52-8-8v-8h16v8c0 4.32-3.52 8-8 8zM29.28 9.28c0 0.8-0.64 1.28-1.28 1.28h-1.28v-3.84h1.28c0.8 0 1.28 0.64 1.28 1.28v1.28z"></path></symbol><symbol onclick="location.href='index.html';" id="icon-home" viewBox="0 0 32 32"><title onclick="location.href='index.html';">home</title><path d="M16 4.48l12.48 9.92v14.080h-24.96v-14.080l12.48-9.92zM16 0.48l-15.52 12.48v18.72h31.040v-18.72l-15.52-12.48z"></path><path d="M32 32h-32v-19.2l16-12.8 16 12.8v19.2zM0.8 31.2h30.4v-18.080l-15.2-12.16-15.2 12.16v18.080zM28.8 28.8h-25.6v-14.56l12.8-10.24 12.8 10.24v14.56zM4 28h24.16v-13.44l-12-9.6-12 9.6v13.44z"></path></symbol></defs></svg>  --><br><br><br><br><br>
-    <div class="blog-container"><br>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>And Then Everything was just SORTED</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>
-            Gardyloo GardyLoo! Lmao well! Hmm not really. So I did take a day-break from my mobile-phone. In fact I used to do this a year before quite frequently while preparing, so coming to the main topic today I just passed a year from the day everything got sorted after a long chaos. Yep on 27th May I gave my historical JEE ADV LOl. And I am not gonna talk about my jee from now, ofc today I will.  Hmm i do imagine sometimes what would have happenedin case I didnt make it this time too well i would have been broken completely from the inside out. 
-            aaj mereko daant pad gayi mehul se :/ kaaam hi aisa kiya maine. Jira cloud pe 5 logo ko invite bhej diyaa .-. paid hota hai voh lmao Mehul ke paas 120$ ka bill agaya. 😬 Koi nahi in the end it was all sorted out as I said I just sorted everything today  :p Ab sab sorted hai finally. A day away from phone and people provides you much much time to think and act accordingly.
-            So, final plan is somewhat like i am going to finish a 4 week project in coming 3 days and will be finishing MissionED app project by the coming week. Finally i will be left with IITD marketplace and creato voh chalta rahega marketplace is chill. Om bhi hai usme and Creato toh khair hai hi baseline. Best decision of my life i would say.
-            At times I think of leaving it but end up seeing all the things it does have to offer. Kaafi nice. 
-          </p>
+    <div class="blog-summary">
+      <p>
+        Gardyloo GardyLoo! Lmao well! Hmm not really. So I did take a day-break from my mobile-phone. In fact I used to do this a year before quite frequently while preparing, so coming to the main topic today I just passed a year from the day everything got sorted after a long chaos. Yep on 27th May I gave my historical JEE ADV LOl. And I am not gonna talk about my jee from now, ofc today I will.  Hmm i do imagine sometimes what would have happenedin case I didnt make it this time too well i would have been broken completely from the inside out. 
+        aaj mereko daant pad gayi mehul se :/ kaaam hi aisa kiya maine. Jira cloud pe 5 logo ko invite bhej diyaa .-. paid hota hai voh lmao Mehul ke paas 120$ ka bill agaya. 😬 Koi nahi in the end it was all sorted out as I said I just sorted everything today  :p Ab sab sorted hai finally. A day away from phone and people provides you much much time to think and act accordingly.
+        So, final plan is somewhat like i am going to finish a 4 week project in coming 3 days and will be finishing MissionED app project by the coming week. Finally i will be left with IITD marketplace and creato voh chalta rahega marketplace is chill. Om bhi hai usme and Creato toh khair hai hi baseline. Best decision of my life i would say.
+        At times I think of leaving it but end up seeing all the things it does have to offer. Kaafi nice. 
+      </p>
 
-        </div>
-         <div class="blog-tags">
-          <ul>
-            <li><a>relaxed</a></li>
-            <li><a>satisfied</a></li>
-            <li><a>BYEE</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">26th May</li>
-        </ul>
-      </div>
-      <div class="content">
-        <div class="audio-player__container"
-          data-audio-src="./includes/audio/Jim Croce -Time In A Bottle (Lyrics).mp3">
-          <div class="file-path">
-            ./includes/audio/Jim Croce -Time In A Bottle (Lyrics).mp3
-          </div>
-          <div class="play-btn__container">
-            <div class="text">
-              <p class="stop">Stop</p>
-              <p class="play">Play</p>
-            </div>
-            <div class="toggle">
-              <div class="rectangle"></div>
-            </div>
-          </div>
-          <div class="scrubber__container">
-            <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
-                <defs>
-                  <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
-                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
-                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
-                    <feMerge>
-                      <feMergeNode in="shadowMatrixOuter1" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
-                  <path fill="#4569b8" d="M2 0h3v91H0z" />
-                  <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
-                </g>
-              </svg></div>
-            <div class="scrubber__scrubber--outer">
-              <div class="scrubber__scrubber">
-                <div class="scrubber__scrubber--start"></div>
-                <div class="scrubber__scrubber--end"></div>
-              </div>
-            </div>
-          </div>
-        </div><br>
-      </div>
     </div>
-    <div class="blog-container"><br>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>Things Settling Up ( Write about bhagwad gita / iit vs iiit - things to rememebr jisse bhool na jaau isse yaad aaya i need a todo colum on my blog tooo.</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>
-            I feel things have started to settle up. aaj bahaut kaam hua, and i am satisfied finally ionic with react ho raha hai ab mere se woohoo kya masst page banaya maine aaj. cheers to me. Haan well aaj whatsapp kam hi use kiya kabhi kabhi toh i feel leaving bleed bhagwa . Hmm well kuch productive baat nahi hoti uspe isliye. kal uski anniversary thi lmao. prateek made it 2 days before my advanced paper to cheer me up with Himmi and harshit. Insta bhi kam hi use hua. haan well missionED is i guess moslty a week more project. and CreatoSpace bhi chal raha hai accha all thanks goes to Mehul. Also i am making progress. Yayie. aaj mehul ka ek important kaam thaa 1 ghante ka. and haha. I did it. Let's see kal batayega voh. Aur IITD marketplace bhi 
-            kaafi kardiya hai aaj maine
-            ab mostly i will work on it next week so this week only padhai no work I guess :))
-            So far so good. Today I spammed ishita's insta and prateek's fb lmao. haan well i got a frequent reader of my blog and i am super happy about it. Quora kabhi kabhi fireup hojata hai got 4 upvootes and 3 new texts from quora users today. alag hi scene hai. 
-            Jee students kitne bechaarein hote hai yaar unse baat karke hi i want to help them as much as I can but kya karu meri bhi priorities hai. Umm, mom made pancakes today tasty thei. :p Haan and i got my new name LOL S(anitizer)kam kuch aisa lol.
-            Om bhi masst banda hai yaar I misjudged him earlier. Also had a brief talk with prateek sinha again a fairly nice guy looks like I finally got a CTF partner. Dhruv ne aaj apna khud ka Tik-ToK app  banane ka idea diya XD. Bakwaas af.
-            Had a convo how skewed IIT and IITIANS are. well ye firr kabhi likhunga kaafi laamba hai vaise bhi. GN
-          </p>
-        </div>
-         <div class="blog-tags">
-          <ul>
-            <li><a>relaxed</a></li>
-            <li><a>satisfied</a></li>
-            <li><a>BYEE</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">26th May</li>
-        </ul>
-      </div>
-      <div class="content">
-        <div class="audio-player__container"
-          data-audio-src="./includes/audio/Jim Croce -Time In A Bottle (Lyrics).mp3">
-          <div class="file-path">
-            ./includes/audio/Jim Croce -Time In A Bottle (Lyrics).mp3
-          </div>
-          <div class="play-btn__container">
-            <div class="text">
-              <p class="stop">Stop</p>
-              <p class="play">Play</p>
-            </div>
-            <div class="toggle">
-              <div class="rectangle"></div>
-            </div>
-          </div>
-          <div class="scrubber__container">
-            <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
-                <defs>
-                  <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
-                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
-                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
-                    <feMerge>
-                      <feMergeNode in="shadowMatrixOuter1" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
-                  <path fill="#4569b8" d="M2 0h3v91H0z" />
-                  <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
-                </g>
-              </svg></div>
-            <div class="scrubber__scrubber--outer">
-              <div class="scrubber__scrubber">
-                <div class="scrubber__scrubber--start"></div>
-                <div class="scrubber__scrubber--end"></div>
-              </div>
-            </div>
-          </div>
-        </div><br>
-      </div>
+     <div class="blog-tags">
+      <ul>
+        <li><a>relaxed</a></li>
+        <li><a>satisfied</a></li>
+        <li><a>BYEE</a></li>
+      </ul>
     </div>
-   
-    <div class="blog-container"><br>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>Irritation MAXXX</a></h1>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">26th May</li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="audio-player__container"
+      data-audio-src="./includes/audio/Jim Croce -Time In A Bottle (Lyrics).mp3">
+      <div class="file-path">
+        ./includes/audio/Jim Croce -Time In A Bottle (Lyrics).mp3
+      </div>
+      <div class="play-btn__container">
+        <div class="text">
+          <p class="stop">Stop</p>
+          <p class="play">Play</p>
         </div>
-        <div class="blog-summary">
-          <p>
-            Today gave a Quiz with Prateek(The pontiac pandit), Himmi ( Marendra Nodi), Harshit (Toxshit) and two other IITD peeps only Hetvi Jethwani (brainysaber) and Anupam (Anupandemic) also me (theboynextdoor) Lmao these were the discord usernames. Haan well I did enjoy it solved a few of them too. Lmao Hetvi is a lively kindoff person Sanjukta ki friend hai and AFAIK I had an geeky image of her and somewhat umm like a 
-            rude. But she is quite pleasant in her nature. Well mai aage se himnish aur prateek ke saath toh nahi dene waala quiz for obvious reasons in the end i end up being exhausted after a full hectic day i planned to relax with all four aur Himmi often spoils my mood. The thing I dont understand is ki why do we expect everyone to behave like we do. 
-            upar se why should i be affected by someone. but duhh Himmi aur prateek kuch karenge toh ofcourse mai affect hounga na kitna natural hai.  UGHHH. haan isse I realised a thing while rehearsing a convo if in case i ever have a convo about this with Himmi. The time a person is tensed or maybe ummm feeling ashamed or cautious about a situation its always our mind that makes it so,
-            aaj kuch hua thaa that i dont remember completely but ye uske respect mei hai. often i make small things look like a big embarassment and end up wasting my time over it. Well IITD marketplace pe bahaut dimaag barbaad kiya aaj nahi ho raha thaa mere se kuch Bhi.
-            aur voh bahaut depressing tha. Because for fucks sake i have been working for 1 month on Ionic with Angular and mere se ionic ka page nahi bann raha thaa aaj. chalo let it be kal dekhunga. Aree haan I was looking for some anime suggestions and finally had a talk with Priya idk her last name but she is a weabo 
-            Lamo yeah she knows a lot about Animes and stuff. Anime quiz toh pakka uske saath hi doonga mai koi bhi hoga toh. Aur.... haaan well mere 12th mei 87 percentage aaye thei sunnlo sab huh. Yaman sir se baat karni hai bade dinn hogaye. Shashwat sir bhi karni hai. Chalo BYEEE ab. i am tired af 
-          </p>
-        </div>
-         <div class="blog-tags">
-          <ul>
-            <li><a>Irritsted</a></li>
-            <li><a>hectic</a></li>
-            <li><a>tired </a></li>
-          </ul>
+        <div class="toggle">
+          <div class="rectangle"></div>
         </div>
       </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">25th May</li>
-        </ul>
-      </div>
-      <div class="content">
-        <div class="audio-player__container"
-          data-audio-src="./includes/audio/Silver - Wham Bam Shang-A-Lang (Official Audio).mp3">
-          <div class="file-path">
-            ./includes/audio/Silver - Wham Bam Shang-A-Lang (Official Audio).mp3
+      <div class="scrubber__container">
+        <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
+            <defs>
+              <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
+                <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
+                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
+                <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+                <feMerge>
+                  <feMergeNode in="shadowMatrixOuter1" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
+              <path fill="#4569b8" d="M2 0h3v91H0z" />
+              <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
+            </g>
+          </svg></div>
+        <div class="scrubber__scrubber--outer">
+          <div class="scrubber__scrubber">
+            <div class="scrubber__scrubber--start"></div>
+            <div class="scrubber__scrubber--end"></div>
           </div>
-          <div class="play-btn__container">
-            <div class="text">
-              <p class="stop">Stop</p>
-              <p class="play">Play</p>
-            </div>
-            <div class="toggle">
-              <div class="rectangle"></div>
-            </div>
-          </div>
-          <div class="scrubber__container">
-            <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
-                <defs>
-                  <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
-                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
-                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
-                    <feMerge>
-                      <feMergeNode in="shadowMatrixOuter1" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
-                  <path fill="#4569b8" d="M2 0h3v91H0z" />
-                  <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
-                </g>
-              </svg></div>
-            <div class="scrubber__scrubber--outer">
-              <div class="scrubber__scrubber">
-                <div class="scrubber__scrubber--start"></div>
-                <div class="scrubber__scrubber--end"></div>
-              </div>
-            </div>
-          </div>
-        </div><br>
-      </div>
-    </div>
-    <div class="blog-container"><br>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>Sleep(Y) Day</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>
-        Ughh, this sleep algo is so confusing how can soemone sleeping early can tired at 10 AM in the morning as well. Guess who that someone is. Yaar ye mereko spamming vaala kaam bilkul pasand nahi hai just to increase the reach ye IIIT allahabad mei bhi bahaut karate thei. 
-        Today I slept a lot haha. JEE Adv se phele bhi bahaut soya thaa mai ek hafta :3 So so ke hi advanced nikla hai. Lmao I still remember how ill I got on the day of JEE I met a girl to on that day after Paper 1 Rijuta Pundir (TOXIC ALERT) and the next moment mereko prateek yaad aata hai lol it was so funny. Prateek's voice in my head saying "*cuss words* pehle paper dele". Aaj Mehul aur Shashwat ke saath ek aur video call hai 7 baje shaam ko😭. Plus missionED ki bhi meeting hai 8 ya 9 baje 😭. Dinner kab karunga yaar mai 😭. 
-        QuaranTeach ka toh alag hi bura haal chal raha hai xDD. check out <a href="https://giphy.com/explore/xavieralopez?utm_source=media-link&utm_medium=landing&utm_campaign=Media%20Links&utm_term=">XAVIERLOPEZ</a> I so love his/her work.   
-         </p>
-        </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>Biji</a></li>
-            <li><a>NOSTALGIC</a></li>
-            <li><a>SLEEPY </a></li>
-          </ul>
         </div>
       </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">24th May</li>
-        </ul>
-      </div>
-      <div class="content">
-        <div class="audio-player__container"
-          data-audio-src="./includes/audio/Kodaline - All I Want (Part 1).mp3">
-          <div class="file-path">
-            ./includes/audio/Kodaline - All I Want (Part 1).mp3
-          </div>
-          <div class="play-btn__container">
-            <div class="text">
-              <p class="stop">Stop</p>
-              <p class="play">Play</p>
-            </div>
-            <div class="toggle">
-              <div class="rectangle"></div>
-            </div>
-          </div>
-          <div class="scrubber__container">
-            <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
-                <defs>
-                  <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
-                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
-                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
-                    <feMerge>
-                      <feMergeNode in="shadowMatrixOuter1" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
-                  <path fill="#4569b8" d="M2 0h3v91H0z" />
-                  <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
-                </g>
-              </svg></div>
-            <div class="scrubber__scrubber--outer">
-              <div class="scrubber__scrubber">
-                <div class="scrubber__scrubber--start"></div>
-                <div class="scrubber__scrubber--end"></div>
-              </div>
-            </div>
-          </div>
-        </div><br>
-      </div>
-    </div>
-    <div class="blog-container"><br>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>Workload Intensifies</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>
-           Today I as usual woke up early and was watching 13 reasons why while working on mission ED App. Almost ready it is and I am so happy it can be said as my first "Android" App. Itni Khushi Itni Khushi baba reh. XD Coming to the intersting part I watched a man stealing our plant pots kept in front of the house. He hads done it twice. I am thiking to upload his video on YouTube Lets see kitne views aatein hai. Hmm In am in a dilemma here,
-           well tbh when I tracked that man for his info and well it was pretty hard to do so because yk he is a common man with not much social activity ofcourse. What do you expect from a man who steal plant pots from the road. Haan so finally got his complete details with address and name and everything possible through his Activa Scooter Number Plate. HAHAHA *devilish laughs*
-            Though I havent done anything yet because he is from a dangerous area and I cant risk anything doing myself plus mera kya hi jaa raha papa ke gamle thei voh lol. Well, anyone can be a thief and anyone can do bad deeds pretty rich and upper caste people too do wrong things but the dilemma I am here is whether I should hate such people who are who are already getting so much for free from the government and still abuses them side by side doing things like this. Also, people who supports Pakistan in an India Pak match who does pretty wrong things in the name of religion and ofcourse they got 
-            many saviours too. KUNAL i dont think you would ever read this blog tho. But seriously dude I can be unaware of many things  but on this I am damn sure that you are asshole. coming back to dilemma the dilemma is whether I sholud hate such people who does things like this and those who are bad for the nation and society or I should have mercy upon myself who being from the caste which gets nothing for free from the governament has to work hard to get everything umm or I should just be like " Youtube pe upload kardunga dekhte ahai kitne views aatei hai , papa ke gamle thei mereko kya hai LMAO" yk 
-            just leave it attitude. When the holy cows are slaughtered in the holy month of Ramzan should I be hurt or should I just scroll my google/instagram feed up. I need to know how should i feel because that is also now governed by society these days. How one should feel and react. Well most of the time was spent on working on the app, thode dino baad launching hai. let's see kya hota hai.
-            :// Basically its the dilemma of should i just go with the flow or should I do something to break the flow. or maybe i am just unaware / blinded to some other things I should know before worrying over all this. 
-          </p>
-        </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>TIRED</a></li>
-            <li><a>DILEMMA</a></li>
-            <li><a>SAD</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">23rd May</li>
-        </ul>
-      </div>
-      <div class="content">
-        <div class="audio-player__container"
-          data-audio-src="./includes/audio/Kodaline - All I Want (Part 1).mp3">
-          <div class="file-path">
-            ./includes/audio/Kodaline - All I Want (Part 1).mp3
-          </div>
-          <div class="play-btn__container">
-            <div class="text">
-              <p class="stop">Stop</p>
-              <p class="play">Play</p>
-            </div>
-            <div class="toggle">
-              <div class="rectangle"></div>
-            </div>
-          </div>
-          <div class="scrubber__container">
-            <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
-                <defs>
-                  <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
-                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
-                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
-                    <feMerge>
-                      <feMergeNode in="shadowMatrixOuter1" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
-                  <path fill="#4569b8" d="M2 0h3v91H0z" />
-                  <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
-                </g>
-              </svg></div>
-            <div class="scrubber__scrubber--outer">
-              <div class="scrubber__scrubber">
-                <div class="scrubber__scrubber--start"></div>
-                <div class="scrubber__scrubber--end"></div>
-              </div>
-            </div>
-          </div>
-        </div><br>
-      </div>
-    </div>
-    <div class="blog-container"><br>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>A Normal Day</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>
-            Yo! Well I came through a person's whatsapp story about how people aren't giving any attention to West Bengal's Cyclone Issue (Amphan). It was sad to see that.
-            Coming to the important musings... I just installed evernote sometimes the things get so messed up that I totally get confused up where should I start from. Lets start from the evernote only Its a nice application one should try with many cool ready-made templates. I need something so that I could manage my tutorials, my projects, my priorities, social duties, house choreses, me-time well. Like a weekly schedule typo something or maybe not fuck it. HAHA. I am watching 13 reasons why.
-            How do people judge by the show you are watching, I mean I dont have such fucked up powers TBH. Infact I just watch anything like its totally random for me I wouldn't watch a series for months and then suddenly I be binging over it. Well I need another season of Humourously Yous. It was super awesome.
-            I talked to himnish today kaafi time baad dhang se about how we should make our life more happening lmao. Well, himnish hamesha yaad rakhta hai jo bhi mai kehta hu usse, patanhi kaise but kaafi sahi lagta hai. For example - The story i told him about when I went to IIT roorkee for Josaa counselling and suddenly I was all nostalgic while the car went throught the same road from which I went a year ago to Gurukul Kangri for the same Josaa counselling. Such a jump right xD. Well, I became a lil emotional then when I saw a little smile on Dad's face. Hmmmm, leaving this here only. 
-            Well i have finally started with a book infact 2. :) Bhagwad Gita .-. and ofcourse the Kite runner. Next is 11 minutes on the list. haa. 
-            Also checkout bruno-simon.com kaafi cool. Lusion.co is another one. Lmao I really like watching cool websites. Also the song I am hearing right now which is in the audio player below is i guess my first english song which i liked a lot that time BIG CITY DREAMS, wont deny i still love this song I guess i am done for today Goodnight.
+    </div><br>
+  </div>
 
-          </p>
-        </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>Normal</a></li>
-            <li><a>Kuch happening nahi</a></li>
-            <li><a>books padhna start </a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">22nd May</li>
-        </ul>
-      </div>
-      <div class="content">
-        <div class="audio-player__container"
-          data-audio-src="./includes/audio/Big City Dreams [OFFICIAL VIDEO]">
-          <div class="file-path">
-            ./includes/audio/Big City Dreams [OFFICIAL VIDEO].mp3
-          </div>
-          <div class="play-btn__container">
-            <div class="text">
-              <p class="stop">Stop</p>
-              <p class="play">Play</p>
-            </div>
-            <div class="toggle">
-              <div class="rectangle"></div>
-            </div>
-          </div>
-          <div class="scrubber__container">
-            <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
-                <defs>
-                  <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
-                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
-                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
-                    <feMerge>
-                      <feMergeNode in="shadowMatrixOuter1" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
-                  <path fill="#4569b8" d="M2 0h3v91H0z" />
-                  <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
-                </g>
-              </svg></div>
-            <div class="scrubber__scrubber--outer">
-              <div class="scrubber__scrubber">
-                <div class="scrubber__scrubber--start"></div>
-                <div class="scrubber__scrubber--end"></div>
-              </div>
-            </div>
-          </div>
-        </div><br>
-      </div>
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>Things Settling Up ( Write about bhagwad gita / iit vs iiit - things to rememebr jisse bhool na jaau isse yaad aaya i need a todo colum on my blog tooo.</a></h1>
     </div>
-    <div class="blog-container">
-      <div class="blog-header">
-        <div class="blog-cover2">
-          <div class="blog-author">
-            <h3></h3>
-          </div>
-        </div>
-      </div>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>Not So Bad Day</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>
-           Haan toh... book padhni hai yaar :'( Wehn Wihl AAhi Beeh Ehble Tuh Duh Wahat I Wahant. Seeet mahn. Haan so Important baat. Mehul yaar roz video call pe samjhata hai nayi nayi cheeze aur mai yahan ek course khatam nahi karr paa raha hu. Mom wants ki mai jaldi uthu and sahi bhi hai kaafi embarrassing feel hota hai when I sleep and wake up multiple times till its 11 in the morning. Feels like a hangover xD.
-           Also, play list banani hai. Dude I seriously need a bucket list like this thing would have been on the top of my bucket list. -___-. Yaman Sir daraa dete hai yaar jab bhi baat karta hu. Future se related. GPA/BIOTECH/Trainging and Placement chronicles etc etc. well sanidhya kitna chill rehta hai yaar. Sahi banda hai. Plus pata nahii ye lockdown kabtakk chalega :/// kuch log toh aise hai jinse mai roz baat karta hu but i havent even seen them yet. FATE 
-           I miss Mom and Dad when I am at college so I should spend more time with them while I am here... and i aint doing that much. Hmm from tomorrow I will :) 
-            Coming back to the important stuff. Well a girl just told me I am not lazy. hahaha. well sahi hai I am not lazy while lazying over someone. 
-            So, coming back to important stuff now. what actually this blog was made for... what i was thinking of a new idea or something right well tbh lately my ideas are mostly limited to some business expansion typo stuff related to some app or website and marketing strategies. From which I want to shift towards some more creative ones.
-            Tabhi toh I want to read books.. Got it now. Muting Instagram and whatsapp provides another sense of peace and satisfaction lmao validation too :P Well not really itne texts nahi aatei mujhe :/ . Well aaj archit ne ek video bheji dhruv rathi ki group pe idk kitna sach hai ofc BJP opposing tho uske saarei videos asie hi hote hai ab Ojaswa ispe kuch apne not so necessary trashy opinions dedega lol. I am so out  of all this now. Already Done that not a fan type vaali cheez hai i am just happy with the opinions I have and I will change them whenever I want just by listening two to three not so intelligent people quarrel over some not so important matter.
-            Well whats more important that RDJ not making Iron Man 4 right. Media kuch bhi kehti hai. Isliye I have muted Ojaswa way back :PP Well to end with the day I have an intersting not so funny one-liner :P I cut my finger today On the other hand I am okay. :) Bye
-          </p>
-        </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>Not-so Bad day</a></li>
-            <li><a>Sleepless</a></li>
-            <li><a>Cornetto best nahi hoti</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">21st May</li>
-        </ul>
-      </div>
-      <div class="content">
-        <div class="audio-player__container"
-          data-audio-src="./includes/audio/Redbone - Come and Get Your Love (Official Audio)">
-          <div class="file-path">
-            ./includes/audio/Redbone - Come and Get Your Love (Official Audio).mp3
-          </div>
-          <div class="play-btn__container">
-            <div class="text">
-              <p class="stop">Stop</p>
-              <p class="play">Play</p>
-            </div>
-            <div class="toggle">
-              <div class="rectangle"></div>
-            </div>
-          </div>
-          <div class="scrubber__container">
-            <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
-                <defs>
-                  <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
-                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
-                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
-                    <feMerge>
-                      <feMergeNode in="shadowMatrixOuter1" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
-                  <path fill="#4569b8" d="M2 0h3v91H0z" />
-                  <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
-                </g>
-              </svg></div>
-            <div class="scrubber__scrubber--outer">
-              <div class="scrubber__scrubber">
-                <div class="scrubber__scrubber--start"></div>
-                <div class="scrubber__scrubber--end"></div>
-              </div>
-            </div>
-          </div>
-        </div><br>
-      </div>
+    <div class="blog-summary">
+      <p>
+        I feel things have started to settle up. aaj bahaut kaam hua, and i am satisfied finally ionic with react ho raha hai ab mere se woohoo kya masst page banaya maine aaj. cheers to me. Haan well aaj whatsapp kam hi use kiya kabhi kabhi toh i feel leaving bleed bhagwa . Hmm well kuch productive baat nahi hoti uspe isliye. kal uski anniversary thi lmao. prateek made it 2 days before my advanced paper to cheer me up with Himmi and harshit. Insta bhi kam hi use hua. haan well missionED is i guess moslty a week more project. and CreatoSpace bhi chal raha hai accha all thanks goes to Mehul. Also i am making progress. Yayie. aaj mehul ka ek important kaam thaa 1 ghante ka. and haha. I did it. Let's see kal batayega voh. Aur IITD marketplace bhi 
+        kaafi kardiya hai aaj maine
+        ab mostly i will work on it next week so this week only padhai no work I guess :))
+        So far so good. Today I spammed ishita's insta and prateek's fb lmao. haan well i got a frequent reader of my blog and i am super happy about it. Quora kabhi kabhi fireup hojata hai got 4 upvootes and 3 new texts from quora users today. alag hi scene hai. 
+        Jee students kitne bechaarein hote hai yaar unse baat karke hi i want to help them as much as I can but kya karu meri bhi priorities hai. Umm, mom made pancakes today tasty thei. :p Haan and i got my new name LOL S(anitizer)kam kuch aisa lol.
+        Om bhi masst banda hai yaar I misjudged him earlier. Also had a brief talk with prateek sinha again a fairly nice guy looks like I finally got a CTF partner. Dhruv ne aaj apna khud ka Tik-ToK app  banane ka idea diya XD. Bakwaas af.
+        Had a convo how skewed IIT and IITIANS are. well ye firr kabhi likhunga kaafi laamba hai vaise bhi. GN
+      </p>
     </div>
-   
-    <div class="blog-container">
-      <div class="blog-header">
-        <div class="blog-cover1">
-          <div class="blog-author">
-            <h3></h3>
-          </div>
-        </div>
-      </div>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>A day well spent</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>
-           Today I watched The NoteBook which Sanjukta suggested me, I really liked that movie it was a lil cliche at start to watch Ryan Gosling(Noah) and Rachel Mc Adams(Alie) go crazy after each other lol. But the theme was a pretty one TBH. Reading the story of someone to the same person and by the end I was shedding tears... Well no further spoilers. Uhm So IIT D Marketplace ka kaam finally shuru hua meri side se and 
-           Om ne kaafi kaam pehele hi karr diya thaa I will now make it look good and create the rest of the components. Well Shubham kaafi ajeeb insaan hai yaar. Om aur mai discuss karr rahe thei A complete Asshole he is! Leave it here, hmm mom ke saath bade time se koi movie nahi dekhi soch raha hu koi dekhleta hu kal. 
-           Mom ko Ozark kaafi pasand aagaya hai vaise bhi toh sahi hi hai. 
-          </p>
-        </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>Normal</a></li>
-            <li><a>2am</a></li>
-            <li><a>YDAY</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">20th May</li>
-        </ul>
-      </div>
-      <div class="content">
-        <div class="audio-player__container"
-          data-audio-src="./includes/audio/The Notebook I Knew I loved You Savage Garden.mp3">
-          <div class="file-path">
-            ./includes/audio/The Notebook I Knew I loved You Savage Garden.mp3
-          </div>
-          <div class="play-btn__container">
-            <div class="text">
-              <p class="stop">Stop</p>
-              <p class="play">Play</p>
-            </div>
-            <div class="toggle">
-              <div class="rectangle"></div>
-            </div>
-          </div>
-          <div class="scrubber__container">
-            <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
-                <defs>
-                  <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
-                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
-                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
-                    <feMerge>
-                      <feMergeNode in="shadowMatrixOuter1" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
-                  <path fill="#4569b8" d="M2 0h3v91H0z" />
-                  <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
-                </g>
-              </svg></div>
-            <div class="scrubber__scrubber--outer">
-              <div class="scrubber__scrubber">
-                <div class="scrubber__scrubber--start"></div>
-                <div class="scrubber__scrubber--end"></div>
-              </div>
-            </div>
-          </div>
-        </div><br>
-      </div>
+     <div class="blog-tags">
+      <ul>
+        <li><a>relaxed</a></li>
+        <li><a>satisfied</a></li>
+        <li><a>BYEE</a></li>
+      </ul>
     </div>
-   
-    <div class="blog-container"><br>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>A Busy Day</a></h1>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">26th May</li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="audio-player__container"
+      data-audio-src="./includes/audio/Jim Croce -Time In A Bottle (Lyrics).mp3">
+      <div class="file-path">
+        ./includes/audio/Jim Croce -Time In A Bottle (Lyrics).mp3
+      </div>
+      <div class="play-btn__container">
+        <div class="text">
+          <p class="stop">Stop</p>
+          <p class="play">Play</p>
         </div>
-        <div class="blog-summary">
-          <p>Well, log kitna kuch karr rahe hai yaar life meh. It makes me go all tired even thinking about what's more
-            left to learn. So in the end I just prefer to sleep.💁 Well, nothing much happened today, saw some nice
-            designs and illustrations on Instagram. Got a glimpse of some Tik-Tok Vs YouTube on Hostel Informal Group.
-            Well, interesting issue right, tho that Bhishm Pitamaha Vs Jesus christ's meme is quite funny so is this
-            issue... Coming to more important and genuine topic of the hour. Another cyclone might hit the shores of
-            Orissa. Sad right! Yeah well one can say 2020 is cursed infact people are already saying that so let's not
-            follow the crowd and rather say "Try to play the orchestra". Lmao, Context... Haan well who knows maybe I
-            too forget what this line was all about isliye hi toh ye blog hai 💁As an escape to the biji schedule and
-            spend my #metime. So this is a line from Steve Job's movie cum documentory in which he tells Steve Wozniak,
-            "You may be the best Musician in your line but I, I am the one who plays Orchestra". Cool right? True too.
-            I dont know how to relate this to the modern world scenario maybe I haven't experienced it yet... But it
-            gives me Goosebumps each time I think about it. another imp concern of the hour QuaranTeach, Umm so far so
-            good but what to do next?? I am open to suggestions about this please. Book bhi padhni hai kabse hi standy
-            pe hai. I so want to read books and novels but idk why I feel that there are more important things to do
-            than that. Aaj meri Inglis ka mazzak udaya Prateek Himmi ne LOL. Well I was trynna roast someone and uske
-            excitement mei kuch bhi blabber kardiya vaise sirf do words ki BT thi lekin theek hai ab unki baat ka bura
-            bhi toh nahi lagta. Harshit Busy rehta hai aajkal. Ishita ki Mom ka bday hai aaj, it must be hard being a
-            single parent I do feel bad for her but couldn't gather strngth to talk about. Raman called too today💁 I am
-            sad I am unable to give the time to the project we decided to work upon but kya kar sakte hai. Priortize toh
-            karna padega. Plus CreatoSpace Meetz Hackathon mei slect nahi hui :(( It made me pretty sad kaafi padha thaa
-            yaar uske
-            liye but ab kya hi karr sakte hai. SomeHow my wynk got updated and all I am listening to are some of the
-            nicest songs I have ever heard. So TATA I am off to bed now :3
-            SHIT yaad aaya Mehul kya hi masst banda hai yaar sahi aadmi hai kaafi kuch aata hai and idk how but voh
-            impressed hai mujhse looks like I got a mentor. :p bass saala 4 baje takk jagata hai aur faaltu ka dikhawa
-            kardeta hai beech beech mei :(
+        <div class="toggle">
+          <div class="rectangle"></div>
+        </div>
+      </div>
+      <div class="scrubber__container">
+        <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
+            <defs>
+              <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
+                <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
+                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
+                <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+                <feMerge>
+                  <feMergeNode in="shadowMatrixOuter1" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
+              <path fill="#4569b8" d="M2 0h3v91H0z" />
+              <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
+            </g>
+          </svg></div>
+        <div class="scrubber__scrubber--outer">
+          <div class="scrubber__scrubber">
+            <div class="scrubber__scrubber--start"></div>
+            <div class="scrubber__scrubber--end"></div>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  </div>
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>Irritation MAXXX</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>
+        Today gave a Quiz with Prateek(The pontiac pandit), Himmi ( Marendra Nodi), Harshit (Toxshit) and two other IITD peeps only Hetvi Jethwani (brainysaber) and Anupam (Anupandemic) also me (theboynextdoor) Lmao these were the discord usernames. Haan well I did enjoy it solved a few of them too. Lmao Hetvi is a lively kindoff person Sanjukta ki friend hai and AFAIK I had an geeky image of her and somewhat umm like a 
+        rude. But she is quite pleasant in her nature. Well mai aage se himnish aur prateek ke saath toh nahi dene waala quiz for obvious reasons in the end i end up being exhausted after a full hectic day i planned to relax with all four aur Himmi often spoils my mood. The thing I dont understand is ki why do we expect everyone to behave like we do. 
+        upar se why should i be affected by someone. but duhh Himmi aur prateek kuch karenge toh ofcourse mai affect hounga na kitna natural hai.  UGHHH. haan isse I realised a thing while rehearsing a convo if in case i ever have a convo about this with Himmi. The time a person is tensed or maybe ummm feeling ashamed or cautious about a situation its always our mind that makes it so,
+        aaj kuch hua thaa that i dont remember completely but ye uske respect mei hai. often i make small things look like a big embarassment and end up wasting my time over it. Well IITD marketplace pe bahaut dimaag barbaad kiya aaj nahi ho raha thaa mere se kuch Bhi.
+        aur voh bahaut depressing tha. Because for fucks sake i have been working for 1 month on Ionic with Angular and mere se ionic ka page nahi bann raha thaa aaj. chalo let it be kal dekhunga. Aree haan I was looking for some anime suggestions and finally had a talk with Priya idk her last name but she is a weabo 
+        Lamo yeah she knows a lot about Animes and stuff. Anime quiz toh pakka uske saath hi doonga mai koi bhi hoga toh. Aur.... haaan well mere 12th mei 87 percentage aaye thei sunnlo sab huh. Yaman sir se baat karni hai bade dinn hogaye. Shashwat sir bhi karni hai. Chalo BYEEE ab. i am tired af 
+      </p>
+    </div>
+     <div class="blog-tags">
+      <ul>
+        <li><a>Irritsted</a></li>
+        <li><a>hectic</a></li>
+        <li><a>tired </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">25th May</li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="audio-player__container"
+      data-audio-src="./includes/audio/Silver - Wham Bam Shang-A-Lang (Official Audio).mp3">
+      <div class="file-path">
+        ./includes/audio/Silver - Wham Bam Shang-A-Lang (Official Audio).mp3
+      </div>
+      <div class="play-btn__container">
+        <div class="text">
+          <p class="stop">Stop</p>
+          <p class="play">Play</p>
+        </div>
+        <div class="toggle">
+          <div class="rectangle"></div>
+        </div>
+      </div>
+      <div class="scrubber__container">
+        <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
+            <defs>
+              <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
+                <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
+                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
+                <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+                <feMerge>
+                  <feMergeNode in="shadowMatrixOuter1" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
+              <path fill="#4569b8" d="M2 0h3v91H0z" />
+              <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
+            </g>
+          </svg></div>
+        <div class="scrubber__scrubber--outer">
+          <div class="scrubber__scrubber">
+            <div class="scrubber__scrubber--start"></div>
+            <div class="scrubber__scrubber--end"></div>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  </div>
 
-          </p>
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>Sleep(Y) Day</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>
+    Ughh, this sleep algo is so confusing how can soemone sleeping early can tired at 10 AM in the morning as well. Guess who that someone is. Yaar ye mereko spamming vaala kaam bilkul pasand nahi hai just to increase the reach ye IIIT allahabad mei bhi bahaut karate thei. 
+    Today I slept a lot haha. JEE Adv se phele bhi bahaut soya thaa mai ek hafta :3 So so ke hi advanced nikla hai. Lmao I still remember how ill I got on the day of JEE I met a girl to on that day after Paper 1 Rijuta Pundir (TOXIC ALERT) and the next moment mereko prateek yaad aata hai lol it was so funny. Prateek's voice in my head saying "*cuss words* pehle paper dele". Aaj Mehul aur Shashwat ke saath ek aur video call hai 7 baje shaam ko😭. Plus missionED ki bhi meeting hai 8 ya 9 baje 😭. Dinner kab karunga yaar mai 😭. 
+    QuaranTeach ka toh alag hi bura haal chal raha hai xDD. check out <a href="https://giphy.com/explore/xavieralopez?utm_source=media-link&utm_medium=landing&utm_campaign=Media%20Links&utm_term=">XAVIERLOPEZ</a> I so love his/her work.   
+     </p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a>Biji</a></li>
+        <li><a>NOSTALGIC</a></li>
+        <li><a>SLEEPY </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">24th May</li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="audio-player__container"
+      data-audio-src="./includes/audio/Kodaline - All I Want (Part 1).mp3">
+      <div class="file-path">
+        ./includes/audio/Kodaline - All I Want (Part 1).mp3
+      </div>
+      <div class="play-btn__container">
+        <div class="text">
+          <p class="stop">Stop</p>
+          <p class="play">Play</p>
         </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>4AM</a></li>
-            <li><a>AUR BHI BACHAA THAA</a></li>
-            <li><a>books padhni hai</a></li>
-          </ul>
+        <div class="toggle">
+          <div class="rectangle"></div>
         </div>
       </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">19th May</li>
-        </ul>
+      <div class="scrubber__container">
+        <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
+            <defs>
+              <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
+                <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
+                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
+                <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+                <feMerge>
+                  <feMergeNode in="shadowMatrixOuter1" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
+              <path fill="#4569b8" d="M2 0h3v91H0z" />
+              <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
+            </g>
+          </svg></div>
+        <div class="scrubber__scrubber--outer">
+          <div class="scrubber__scrubber">
+            <div class="scrubber__scrubber--start"></div>
+            <div class="scrubber__scrubber--end"></div>
+          </div>
+        </div>
       </div>
-      <div class="content">
-        <div class="audio-player__container"
-          data-audio-src="./includes/audio/Riverdale-Cast-feat-KJ-Apa-Camila-Mendes-Lili-Reinhart_-_Mad-World.mp3">
-          <div class="file-path">
-            ./includes/audio/Riverdale-Cast-feat-KJ-Apa-Camila-Mendes-Lili-Reinhart_-_Mad-World.mp3
+    </div><br>
+  </div>
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>Workload Intensifies</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>
+       Today I as usual woke up early and was watching 13 reasons why while working on mission ED App. Almost ready it is and I am so happy it can be said as my first "Android" App. Itni Khushi Itni Khushi baba reh. XD Coming to the intersting part I watched a man stealing our plant pots kept in front of the house. He hads done it twice. I am thiking to upload his video on YouTube Lets see kitne views aatein hai. Hmm In am in a dilemma here,
+       well tbh when I tracked that man for his info and well it was pretty hard to do so because yk he is a common man with not much social activity ofcourse. What do you expect from a man who steal plant pots from the road. Haan so finally got his complete details with address and name and everything possible through his Activa Scooter Number Plate. HAHAHA *devilish laughs*
+        Though I havent done anything yet because he is from a dangerous area and I cant risk anything doing myself plus mera kya hi jaa raha papa ke gamle thei voh lol. Well, anyone can be a thief and anyone can do bad deeds pretty rich and upper caste people too do wrong things but the dilemma I am here is whether I should hate such people who are who are already getting so much for free from the government and still abuses them side by side doing things like this. Also, people who supports Pakistan in an India Pak match who does pretty wrong things in the name of religion and ofcourse they got 
+        many saviours too. KUNAL i dont think you would ever read this blog tho. But seriously dude I can be unaware of many things  but on this I am damn sure that you are asshole. coming back to dilemma the dilemma is whether I sholud hate such people who does things like this and those who are bad for the nation and society or I should have mercy upon myself who being from the caste which gets nothing for free from the governament has to work hard to get everything umm or I should just be like " Youtube pe upload kardunga dekhte ahai kitne views aatei hai , papa ke gamle thei mereko kya hai LMAO" yk 
+        just leave it attitude. When the holy cows are slaughtered in the holy month of Ramzan should I be hurt or should I just scroll my google/instagram feed up. I need to know how should i feel because that is also now governed by society these days. How one should feel and react. Well most of the time was spent on working on the app, thode dino baad launching hai. let's see kya hota hai.
+        :// Basically its the dilemma of should i just go with the flow or should I do something to break the flow. or maybe i am just unaware / blinded to some other things I should know before worrying over all this. 
+      </p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a>TIRED</a></li>
+        <li><a>DILEMMA</a></li>
+        <li><a>SAD</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">23rd May</li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="audio-player__container"
+      data-audio-src="./includes/audio/Kodaline - All I Want (Part 1).mp3">
+      <div class="file-path">
+        ./includes/audio/Kodaline - All I Want (Part 1).mp3
+      </div>
+      <div class="play-btn__container">
+        <div class="text">
+          <p class="stop">Stop</p>
+          <p class="play">Play</p>
+        </div>
+        <div class="toggle">
+          <div class="rectangle"></div>
+        </div>
+      </div>
+      <div class="scrubber__container">
+        <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
+            <defs>
+              <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
+                <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
+                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
+                <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+                <feMerge>
+                  <feMergeNode in="shadowMatrixOuter1" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
+              <path fill="#4569b8" d="M2 0h3v91H0z" />
+              <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
+            </g>
+          </svg></div>
+        <div class="scrubber__scrubber--outer">
+          <div class="scrubber__scrubber">
+            <div class="scrubber__scrubber--start"></div>
+            <div class="scrubber__scrubber--end"></div>
           </div>
-          <div class="play-btn__container">
-            <div class="text">
-              <p class="stop">Stop</p>
-              <p class="play">Play</p>
-            </div>
-            <div class="toggle">
-              <div class="rectangle"></div>
-            </div>
+        </div>
+      </div>
+    </div><br>
+  </div>
+
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>A Normal Day</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>
+        Yo! Well I came through a person's whatsapp story about how people aren't giving any attention to West Bengal's Cyclone Issue (Amphan). It was sad to see that.
+        Coming to the important musings... I just installed evernote sometimes the things get so messed up that I totally get confused up where should I start from. Lets start from the evernote only Its a nice application one should try with many cool ready-made templates. I need something so that I could manage my tutorials, my projects, my priorities, social duties, house choreses, me-time well. Like a weekly schedule typo something or maybe not fuck it. HAHA. I am watching 13 reasons why.
+        How do people judge by the show you are watching, I mean I dont have such fucked up powers TBH. Infact I just watch anything like its totally random for me I wouldn't watch a series for months and then suddenly I be binging over it. Well I need another season of Humourously Yous. It was super awesome.
+        I talked to himnish today kaafi time baad dhang se about how we should make our life more happening lmao. Well, himnish hamesha yaad rakhta hai jo bhi mai kehta hu usse, patanhi kaise but kaafi sahi lagta hai. For example - The story i told him about when I went to IIT roorkee for Josaa counselling and suddenly I was all nostalgic while the car went throught the same road from which I went a year ago to Gurukul Kangri for the same Josaa counselling. Such a jump right xD. Well, I became a lil emotional then when I saw a little smile on Dad's face. Hmmmm, leaving this here only. 
+        Well i have finally started with a book infact 2. :) Bhagwad Gita .-. and ofcourse the Kite runner. Next is 11 minutes on the list. haa. 
+        Also checkout bruno-simon.com kaafi cool. Lusion.co is another one. Lmao I really like watching cool websites. Also the song I am hearing right now which is in the audio player below is i guess my first english song which i liked a lot that time BIG CITY DREAMS, wont deny i still love this song I guess i am done for today Goodnight.
+
+      </p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a>Normal</a></li>
+        <li><a>Kuch happening nahi</a></li>
+        <li><a>books padhna start </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">22nd May</li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="audio-player__container"
+      data-audio-src="./includes/audio/Big City Dreams [OFFICIAL VIDEO]">
+      <div class="file-path">
+        ./includes/audio/Big City Dreams [OFFICIAL VIDEO].mp3
+      </div>
+      <div class="play-btn__container">
+        <div class="text">
+          <p class="stop">Stop</p>
+          <p class="play">Play</p>
+        </div>
+        <div class="toggle">
+          <div class="rectangle"></div>
+        </div>
+      </div>
+      <div class="scrubber__container">
+        <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
+            <defs>
+              <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
+                <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
+                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
+                <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+                <feMerge>
+                  <feMergeNode in="shadowMatrixOuter1" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
+              <path fill="#4569b8" d="M2 0h3v91H0z" />
+              <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
+            </g>
+          </svg></div>
+        <div class="scrubber__scrubber--outer">
+          <div class="scrubber__scrubber">
+            <div class="scrubber__scrubber--start"></div>
+            <div class="scrubber__scrubber--end"></div>
           </div>
-          <div class="scrubber__container">
-            <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
-                <defs>
-                  <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
-                    <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
-                    <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
-                    <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
-                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
-                    <feMerge>
-                      <feMergeNode in="shadowMatrixOuter1" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
-                </defs>
-                <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
-                  <path fill="#4569b8" d="M2 0h3v91H0z" />
-                  <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
-                </g>
-              </svg></div>
-            <div class="scrubber__scrubber--outer">
-              <div class="scrubber__scrubber">
-                <div class="scrubber__scrubber--start"></div>
-                <div class="scrubber__scrubber--end"></div>
+        </div>
+      </div>
+    </div><br>
+  </div>
+
+  <div class="blog-header">
+    <div class="blog-cover2">
+      <div class="blog-author">
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>Not So Bad Day</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>
+       Haan toh... book padhni hai yaar :'( Wehn Wihl AAhi Beeh Ehble Tuh Duh Wahat I Wahant. Seeet mahn. Haan so Important baat. Mehul yaar roz video call pe samjhata hai nayi nayi cheeze aur mai yahan ek course khatam nahi karr paa raha hu. Mom wants ki mai jaldi uthu and sahi bhi hai kaafi embarrassing feel hota hai when I sleep and wake up multiple times till its 11 in the morning. Feels like a hangover xD.
+       Also, play list banani hai. Dude I seriously need a bucket list like this thing would have been on the top of my bucket list. -___-. Yaman Sir daraa dete hai yaar jab bhi baat karta hu. Future se related. GPA/BIOTECH/Trainging and Placement chronicles etc etc. well sanidhya kitna chill rehta hai yaar. Sahi banda hai. Plus pata nahii ye lockdown kabtakk chalega :/// kuch log toh aise hai jinse mai roz baat karta hu but i havent even seen them yet. FATE 
+       I miss Mom and Dad when I am at college so I should spend more time with them while I am here... and i aint doing that much. Hmm from tomorrow I will :) 
+        Coming back to the important stuff. Well a girl just told me I am not lazy. hahaha. well sahi hai I am not lazy while lazying over someone. 
+        So, coming back to important stuff now. what actually this blog was made for... what i was thinking of a new idea or something right well tbh lately my ideas are mostly limited to some business expansion typo stuff related to some app or website and marketing strategies. From which I want to shift towards some more creative ones.
+        Tabhi toh I want to read books.. Got it now. Muting Instagram and whatsapp provides another sense of peace and satisfaction lmao validation too :P Well not really itne texts nahi aatei mujhe :/ . Well aaj archit ne ek video bheji dhruv rathi ki group pe idk kitna sach hai ofc BJP opposing tho uske saarei videos asie hi hote hai ab Ojaswa ispe kuch apne not so necessary trashy opinions dedega lol. I am so out  of all this now. Already Done that not a fan type vaali cheez hai i am just happy with the opinions I have and I will change them whenever I want just by listening two to three not so intelligent people quarrel over some not so important matter.
+        Well whats more important that RDJ not making Iron Man 4 right. Media kuch bhi kehti hai. Isliye I have muted Ojaswa way back :PP Well to end with the day I have an intersting not so funny one-liner :P I cut my finger today On the other hand I am okay. :) Bye
+      </p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a>Not-so Bad day</a></li>
+        <li><a>Sleepless</a></li>
+        <li><a>Cornetto best nahi hoti</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">21st May</li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="audio-player__container"
+      data-audio-src="./includes/audio/Redbone - Come and Get Your Love (Official Audio)">
+      <div class="file-path">
+        ./includes/audio/Redbone - Come and Get Your Love (Official Audio).mp3
+      </div>
+      <div class="play-btn__container">
+        <div class="text">
+          <p class="stop">Stop</p>
+          <p class="play">Play</p>
+        </div>
+        <div class="toggle">
+          <div class="rectangle"></div>
+        </div>
+      </div>
+      <div class="scrubber__container">
+        <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
+            <defs>
+              <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
+                <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
+                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
+                <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+                <feMerge>
+                  <feMergeNode in="shadowMatrixOuter1" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
+              <path fill="#4569b8" d="M2 0h3v91H0z" />
+              <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
+            </g>
+          </svg></div>
+        <div class="scrubber__scrubber--outer">
+          <div class="scrubber__scrubber">
+            <div class="scrubber__scrubber--start"></div>
+            <div class="scrubber__scrubber--end"></div>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  </div>
+
+  <div class="blog-header">
+    <div class="blog-cover1">
+      <div class="blog-author">
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>A day well spent</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>
+       Today I watched The NoteBook which Sanjukta suggested me, I really liked that movie it was a lil cliche at start to watch Ryan Gosling(Noah) and Rachel Mc Adams(Alie) go crazy after each other lol. But the theme was a pretty one TBH. Reading the story of someone to the same person and by the end I was shedding tears... Well no further spoilers. Uhm So IIT D Marketplace ka kaam finally shuru hua meri side se and 
+       Om ne kaafi kaam pehele hi karr diya thaa I will now make it look good and create the rest of the components. Well Shubham kaafi ajeeb insaan hai yaar. Om aur mai discuss karr rahe thei A complete Asshole he is! Leave it here, hmm mom ke saath bade time se koi movie nahi dekhi soch raha hu koi dekhleta hu kal. 
+       Mom ko Ozark kaafi pasand aagaya hai vaise bhi toh sahi hi hai. 
+      </p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a>Normal</a></li>
+        <li><a>2am</a></li>
+        <li><a>YDAY</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">20th May</li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="audio-player__container"
+      data-audio-src="./includes/audio/The Notebook I Knew I loved You Savage Garden.mp3">
+      <div class="file-path">
+        ./includes/audio/The Notebook I Knew I loved You Savage Garden.mp3
+      </div>
+      <div class="play-btn__container">
+        <div class="text">
+          <p class="stop">Stop</p>
+          <p class="play">Play</p>
+        </div>
+        <div class="toggle">
+          <div class="rectangle"></div>
+        </div>
+      </div>
+      <div class="scrubber__container">
+        <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
+            <defs>
+              <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
+                <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
+                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
+                <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+                <feMerge>
+                  <feMergeNode in="shadowMatrixOuter1" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
+              <path fill="#4569b8" d="M2 0h3v91H0z" />
+              <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
+            </g>
+          </svg></div>
+        <div class="scrubber__scrubber--outer">
+          <div class="scrubber__scrubber">
+            <div class="scrubber__scrubber--start"></div>
+            <div class="scrubber__scrubber--end"></div>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  </div>
+
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>A Busy Day</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>Well, log kitna kuch karr rahe hai yaar life meh. It makes me go all tired even thinking about what's more
+        left to learn. So in the end I just prefer to sleep.💁 Well, nothing much happened today, saw some nice
+        designs and illustrations on Instagram. Got a glimpse of some Tik-Tok Vs YouTube on Hostel Informal Group.
+        Well, interesting issue right, tho that Bhishm Pitamaha Vs Jesus christ's meme is quite funny so is this
+        issue... Coming to more important and genuine topic of the hour. Another cyclone might hit the shores of
+        Orissa. Sad right! Yeah well one can say 2020 is cursed infact people are already saying that so let's not
+        follow the crowd and rather say "Try to play the orchestra". Lmao, Context... Haan well who knows maybe I
+        too forget what this line was all about isliye hi toh ye blog hai 💁As an escape to the biji schedule and
+        spend my #metime. So this is a line from Steve Job's movie cum documentory in which he tells Steve Wozniak,
+        "You may be the best Musician in your line but I, I am the one who plays Orchestra". Cool right? True too.
+        I dont know how to relate this to the modern world scenario maybe I haven't experienced it yet... But it
+        gives me Goosebumps each time I think about it. another imp concern of the hour QuaranTeach, Umm so far so
+        good but what to do next?? I am open to suggestions about this please. Book bhi padhni hai kabse hi standy
+        pe hai. I so want to read books and novels but idk why I feel that there are more important things to do
+        than that. Aaj meri Inglis ka mazzak udaya Prateek Himmi ne LOL. Well I was trynna roast someone and uske
+        excitement mei kuch bhi blabber kardiya vaise sirf do words ki BT thi lekin theek hai ab unki baat ka bura
+        bhi toh nahi lagta. Harshit Busy rehta hai aajkal. Ishita ki Mom ka bday hai aaj, it must be hard being a
+        single parent I do feel bad for her but couldn't gather strngth to talk about. Raman called too today💁 I am
+        sad I am unable to give the time to the project we decided to work upon but kya kar sakte hai. Priortize toh
+        karna padega. Plus CreatoSpace Meetz Hackathon mei slect nahi hui :(( It made me pretty sad kaafi padha thaa
+        yaar uske
+        liye but ab kya hi karr sakte hai. SomeHow my wynk got updated and all I am listening to are some of the
+        nicest songs I have ever heard. So TATA I am off to bed now :3
+        SHIT yaad aaya Mehul kya hi masst banda hai yaar sahi aadmi hai kaafi kuch aata hai and idk how but voh
+        impressed hai mujhse looks like I got a mentor. :p bass saala 4 baje takk jagata hai aur faaltu ka dikhawa
+        kardeta hai beech beech mei :(
+
+      </p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a>4AM</a></li>
+        <li><a>AUR BHI BACHAA THAA</a></li>
+        <li><a>books padhni hai</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">19th May</li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="audio-player__container"
+      data-audio-src="./includes/audio/Riverdale-Cast-feat-KJ-Apa-Camila-Mendes-Lili-Reinhart_-_Mad-World.mp3">
+      <div class="file-path">
+        ./includes/audio/Riverdale-Cast-feat-KJ-Apa-Camila-Mendes-Lili-Reinhart_-_Mad-World.mp3
+      </div>
+      <div class="play-btn__container">
+        <div class="text">
+          <p class="stop">Stop</p>
+          <p class="play">Play</p>
+        </div>
+        <div class="toggle">
+          <div class="rectangle"></div>
+        </div>
+      </div>
+      <div class="scrubber__container">
+        <div class="dial"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="80">
+            <defs>
+              <filter id="a" width="310%" height="122.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
+                <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1" />
+                <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3" />
+                <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0" />
+                <feMerge>
+                  <feMergeNode in="shadowMatrixOuter1" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(4.183 3)">
+              <path fill="#4569b8" d="M2 0h3v91H0z" />
+              <path fill="#4569b8" d="M8 0H5v91H0l5 4 5-4z" />
+            </g>
+          </svg></div>
+        <div class="scrubber__scrubber--outer">
+          <div class="scrubber__scrubber">
+            <div class="scrubber__scrubber--start"></div>
+            <div class="scrubber__scrubber--end"></div>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  </div>
+
+
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>A Day OFF 🌞</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>I am waking up early these days. Its a nice feeling to get up before Sun. Gives a sense of satisfaction.
+        Sometimes I wonder how we people connect a memory with the aroma of the air, and then it suddenly turns on
+        the page of the day you felt the same aroma. Its just awesome sometimes to Reminscate the day, even if
+        something special didnt happen but the feeling is awesome. Finally I had Pizza today after like 2-3 months
+        had to call Mom and Dad hypocrite for that as they were cool in eating Kachori but not Dominos Pizza💁.
+        Sorry for that :P Watched Mirage today was a nice movie infact second movie I watched on ButterFly effect.
+        Quite a crazy paradox lures me each time I read about it. Predestination Paradox is the other crazy and
+        interesting one. These phenomenons/paradoxes based on Causal Loops are a pretty nice source for the
+        Hollywood Movies also topics you can study for hours about atleast for me.
+        Also just yaad aaya pichle saal iss time alag hi BT rehti thi harr time. Well JEE Adv was just a few days
+        far. Himnish se badi serious baatei bhi ho rahi thi kal Infact pichle saal bhi Prateek Himnish Harshit se
+        advice leta rehta thaa mai iss time.
+      </p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a>Bleh</a></li>
+        <li><a>Random_Tag</a></li>
+        <li><a>Forgot</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">18th May</li>
+    </ul>
+  </div>
+
+
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>Little By, Little</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>Sometimes I do wonder if I want to recall what happened the entire day i just have to view the chat history
+        with Prateek :P I am writing this on 19th and I couldn't recall. Sometimes the days just goes by, I feel
+        stuck in a never-ending loop in which I aint satisfied or happy but tired enough not to get out of it.
+        Haan yaad aaya. I made some changes in the design of the blog that day, also I heard a lots and lots of
+        music and made my playlist. Woah itna sab toh kiya thaa 💁. Haha well let's skip this then.
+
+      </p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a>Bleh</a></li>
+        <li><a>Random_Tag</a></li>
+        <li><a>Forgot</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">17th May</li>
+    </ul>
+  </div>
+
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>Boringggggg!</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>
+        Well the day went well today nothing special as such other than I made a Cake and that I made a REST Api
+        today using MongoDb and Nest.Js for straight 3hrs . Yes! Sounds cool right. Well it wasn't instead it was
+        exhausting, creatospace is gonna be a tough job I never thought of how tiery a project could be. I think I
+        should list the priorities for once. <h3>Most Imp.</h3>
+        <li> IITD MarketPlace</li>
+        <li> CreatoSpace</li>
+        <li>MissionED(._.)</li>
+        <h3>To-Do</h3>
+        <li>Make a FOLIO</li>
+        <li>Manage Quora(Well quite important)</li>
+        <li>QuaranTeach :/ (This really getting on my nerves now.)</li>
+      </p>
+      <h3>Not-So Imp</h3>
+      <li>Complete the Book(Kite Runner)</li>
+      <li>Complete the pending poem</li>
+      <li>Bleh :/</li>
+      <p> This makes me think why dont I make a bucket list ;) . Sounds quite intuitive. Not now though .-. ofc got
+        more important things to do... As this listing priorities thing isnt working out either. Well, isse yaad
+        aaya LIMITLESS is a quite awesome series...
+      </p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a>Bleh</a></li>
+        <li><a>Random_Tag</a></li>
+        <li><a>GN</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">16th May</li>
+    </ul>
+  </div>
+  
+  <div class="blog-header">
+    <div class="blog-author--no-cover"></div>
+  </div>
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>Stressed!</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>
+        Just ended a 5 hour long video conference and it wouldnt have been so tiery if I understood something about
+        the code he wrote in 5 hrs. Had plans to sleep early today. Well no Instagram
+        for a few days from today. Email-Template model banana hai Lol I dont even know it yet and
+        the deadline is of tomorrow. :'(
+      </p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a>Sleepy</a></li>
+        <li><a>NightOut</a></li>
+        <li><a>Stressed</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">15th May</li>
+    </ul>
+  </div>
+
+  <div class="blog-header">
+    <div class="blog-author--no-cover"></div>
+  </div>
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>An Embarassing Day</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>
+        Well, the day was going great untill one of the most embarassing things happened to me, and I had nothing to
+        do with it but in the end it was me who ended up getting up embarassed.
+        So, the thing was... I uploaded the poster for QuaranTeach on instagram made by Sahil. Updated the Bio and
+        the response of the page was coming pretty nice untill.. one of the core member of CovEd
+        texts a Hi! okay i got excited TBH as one of the similar organisation was texting, and maybe they might be
+        having plans of collab and stuff, so according to him the content written in the poster was copied from one
+        of the poster of CovEd. He said "I appreciate the initiative by you BUT 'PLEASE DO NOT COPY'. Well I was
+        kind of busy and
+        didnt even read what was in the poster and turns out he was totally right :(
+        I became both super furious and embarassed, side by side several people started texting QuaranTeach mentors
+        about the copied content :/. I didnt had to do anything with me but in the end it was me who had to face
+        embarassment of someone else's stupidity. </p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a>Sad</a></li>
+        <li><a>Stressed</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">14th May</li>
+    </ul>
+  </div>
+
+  <div class="blog-header">
+    <div class="blog-author--no-cover"></div>
+  </div>
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>A new start</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>
+        Finally, after weeks of brainstorming for the perfect design of my daily life blog I ended up with this.
+        Can't
+        say I am satisfied fully but doesn't matter The design would be evolving with the time, The main thing is
+        that
+        this finally got started. :)
+      </p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a>Happy</a></li>
+        <li><a>Enthusiastic</a></li>
+        <li><a>Chilled UP</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">13th May</li>
+    </ul>
+  </div>
+  <div class="blog-header">
+    <div class="blog-cover">
+      <div class="blog-author">
+        <h3></h3>
+      </div>
+    </div>
+  </div>
+  <div class="blog-body">
+    <div class="blog-title">
+      <h1><a>#Musings 01 Perspective and People</a></h1>
+    </div>
+    <div class="blog-summary">
+      <p>
+        I guess I have been messing up with the time a lot lately, like both CreatoSpace and MissionED are big
+        projects and I haven't made any significant progress in CreatoSpace since long. Plus I dont like it when the
+        people are on low enthu, "People" right here the things go wrong when you start to get affected how and what
+        people are doing around you. Well, 'Perspective' is another word to ponder about atleast for me! I have been
+        lately looking things through the 'perspective' of the one who I have been talking to too. LOL, pros and
+        cons
+        exist here too. ._. Maybe, the 'people' I have met in my past have made me so... like this "ALL MESSED UP".
+        Pondering about small things and not letting go full of myself. Well, long story I guess. Let's leave it for
+        later.
+      </p>
+    </div>
+    <div class="blog-tags">
+      <ul>
+        <li><a>musings</a></li>
+        <li><a>4am</a></li>
+        <li><a>overthinking</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="blog-footer">
+    <ul>
+      <li class="published-date">Undefined</li>
+    </ul>
+  </div>
+  <footer class="new_footer_area bg_color">
+    <div class="new_footer_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
+              style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;"></div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
+              style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
+              <div class="col-lg-3 col-md-6">
+                <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
+                  style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;"></div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
+                  style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;"></div>
               </div>
             </div>
           </div>
-        </div><br>
-      </div>
-    </div>
-    <div class="blog-container"><br>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>A Day OFF 🌞</a></h1>
         </div>
-        <div class="blog-summary">
-          <p>I am waking up early these days. Its a nice feeling to get up before Sun. Gives a sense of satisfaction.
-            Sometimes I wonder how we people connect a memory with the aroma of the air, and then it suddenly turns on
-            the page of the day you felt the same aroma. Its just awesome sometimes to Reminscate the day, even if
-            something special didnt happen but the feeling is awesome. Finally I had Pizza today after like 2-3 months
-            had to call Mom and Dad hypocrite for that as they were cool in eating Kachori but not Dominos Pizza💁.
-            Sorry for that :P Watched Mirage today was a nice movie infact second movie I watched on ButterFly effect.
-            Quite a crazy paradox lures me each time I read about it. Predestination Paradox is the other crazy and
-            interesting one. These phenomenons/paradoxes based on Causal Loops are a pretty nice source for the
-            Hollywood Movies also topics you can study for hours about atleast for me.
-            Also just yaad aaya pichle saal iss time alag hi BT rehti thi harr time. Well JEE Adv was just a few days
-            far. Himnish se badi serious baatei bhi ho rahi thi kal Infact pichle saal bhi Prateek Himnish Harshit se
-            advice leta rehta thaa mai iss time.
-          </p>
-        </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>Bleh</a></li>
-            <li><a>Random_Tag</a></li>
-            <li><a>Forgot</a></li>
-          </ul>
+        <div class="footer_bg">
+          <div class="footer_bg_one"></div>
+          <div class="footer_bg_two"></div>
         </div>
       </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">18th May</li>
-        </ul>
-      </div>
-    </div>
-    <div class="blog-container"><br>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>Little By, Little</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>Sometimes I do wonder if I want to recall what happened the entire day i just have to view the chat history
-            with Prateek :P I am writing this on 19th and I couldn't recall. Sometimes the days just goes by, I feel
-            stuck in a never-ending loop in which I aint satisfied or happy but tired enough not to get out of it.
-            Haan yaad aaya. I made some changes in the design of the blog that day, also I heard a lots and lots of
-            music and made my playlist. Woah itna sab toh kiya thaa 💁. Haha well let's skip this then.
-
-          </p>
-        </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>Bleh</a></li>
-            <li><a>Random_Tag</a></li>
-            <li><a>Forgot</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">17th May</li>
-        </ul>
-      </div>
-    </div>
-    <div class="blog-container"><br>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>Boringggggg!</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>
-            Well the day went well today nothing special as such other than I made a Cake and that I made a REST Api
-            today using MongoDb and Nest.Js for straight 3hrs . Yes! Sounds cool right. Well it wasn't instead it was
-            exhausting, creatospace is gonna be a tough job I never thought of how tiery a project could be. I think I
-            should list the priorities for once. <h3>Most Imp.</h3>
-            <li> IITD MarketPlace</li>
-            <li> CreatoSpace</li>
-            <li>MissionED(._.)</li>
-            <h3>To-Do</h3>
-            <li>Make a FOLIO</li>
-            <li>Manage Quora(Well quite important)</li>
-            <li>QuaranTeach :/ (This really getting on my nerves now.)</li>
-          </p>
-          <h3>Not-So Imp</h3>
-          <li>Complete the Book(Kite Runner)</li>
-          <li>Complete the pending poem</li>
-          <li>Bleh :/</li>
-          <p> This makes me think why dont I make a bucket list ;) . Sounds quite intuitive. Not now though .-. ofc got
-            more important things to do... As this listing priorities thing isnt working out either. Well, isse yaad
-            aaya LIMITLESS is a quite awesome series...
-          </p>
-        </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>Bleh</a></li>
-            <li><a>Random_Tag</a></li>
-            <li><a>GN</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">16th May</li>
-        </ul>
-      </div>
-    </div>
-    <div class="blog-container">
-      <div class="blog-header">
-        <div class="blog-author--no-cover"></div>
-      </div>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>Stressed!</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>
-            Just ended a 5 hour long video conference and it wouldnt have been so tiery if I understood something about
-            the code he wrote in 5 hrs. Had plans to sleep early today. Well no Instagram
-            for a few days from today. Email-Template model banana hai Lol I dont even know it yet and
-            the deadline is of tomorrow. :'(
-          </p>
-        </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>Sleepy</a></li>
-            <li><a>NightOut</a></li>
-            <li><a>Stressed</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">15th May</li>
-        </ul>
-      </div>
-    </div>
-    <div class="blog-container">
-      <div class="blog-header">
-        <div class="blog-author--no-cover"></div>
-      </div>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>An Embarassing Day</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>
-            Well, the day was going great untill one of the most embarassing things happened to me, and I had nothing to
-            do with it but in the end it was me who ended up getting up embarassed.
-            So, the thing was... I uploaded the poster for QuaranTeach on instagram made by Sahil. Updated the Bio and
-            the response of the page was coming pretty nice untill.. one of the core member of CovEd
-            texts a Hi! okay i got excited TBH as one of the similar organisation was texting, and maybe they might be
-            having plans of collab and stuff, so according to him the content written in the poster was copied from one
-            of the poster of CovEd. He said "I appreciate the initiative by you BUT 'PLEASE DO NOT COPY'. Well I was
-            kind of busy and
-            didnt even read what was in the poster and turns out he was totally right :(
-            I became both super furious and embarassed, side by side several people started texting QuaranTeach mentors
-            about the copied content :/. I didnt had to do anything with me but in the end it was me who had to face
-            embarassment of someone else's stupidity. </p>
-        </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>Sad</a></li>
-            <li><a>Stressed</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">14th May</li>
-        </ul>
-      </div>
-    </div>
-    <div class="blog-container">
-      <div class="blog-header">
-        <div class="blog-author--no-cover"></div>
-      </div>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>A new start</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>
-            Finally, after weeks of brainstorming for the perfect design of my daily life blog I ended up with this.
-            Can't
-            say I am satisfied fully but doesn't matter The design would be evolving with the time, The main thing is
-            that
-            this finally got started. :)
-          </p>
-        </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>Happy</a></li>
-            <li><a>Enthusiastic</a></li>
-            <li><a>Chilled UP</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">13th May</li>
-        </ul>
-      </div>
-    </div>
-    <div class="blog-container">
-      <div class="blog-header">
-        <div class="blog-cover">
-          <div class="blog-author">
-            <h3></h3>
-          </div>
-        </div>
-      </div>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>#Musings 01 Perspective and People</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>
-            I guess I have been messing up with the time a lot lately, like both CreatoSpace and MissionED are big
-            projects and I haven't made any significant progress in CreatoSpace since long. Plus I dont like it when the
-            people are on low enthu, "People" right here the things go wrong when you start to get affected how and what
-            people are doing around you. Well, 'Perspective' is another word to ponder about atleast for me! I have been
-            lately looking things through the 'perspective' of the one who I have been talking to too. LOL, pros and
-            cons
-            exist here too. ._. Maybe, the 'people' I have met in my past have made me so... like this "ALL MESSED UP".
-            Pondering about small things and not letting go full of myself. Well, long story I guess. Let's leave it for
-            later.
-          </p>
-        </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>musings</a></li>
-            <li><a>4am</a></li>
-            <li><a>overthinking</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">Undefined</li>
-        </ul>
-      </div>
-    </div>
-    <!-- <div class="blog-container">
-      <div class="blog-header">
-        <div class="blog-cover">
-          <div class="blog-author">
-            <h3></h3>
-          </div>
-        </div>
-      </div>
-      <div class="blog-body">
-        <div class="blog-title">
-          <h1><a>#Musings 02 EveryOne's Messed Up</a></h1>
-        </div>
-        <div class="blog-summary">
-          <p>
-          </p>
-        </div>
-        <div class="blog-tags">
-          <ul>
-            <li><a>musings</a></li>
-            <li><a>4am</a></li>
-            <li><a>overthinking</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="blog-footer">
-        <ul>
-          <li class="published-date">Undefined</li>
-        </ul>
-      </div>
-    </div> -->
-    <!-- <div class="blog-container"><div class="blog-header"><div class="blog-cover"><div class="blog-author"><h3></h3></div></div></div><div class="blog-body"><div class="blog-title"><h1><a>#Musings 01 Perspective and People</a></h1></div><div class="blog-summary"><p>
-            I guess I have been messing up with the time a lot lately, like both CreatoSpace and MissionED are big
-            projects and I haven't made any significant progress in CreatoSpace since long. Plus I dont like it when the
-            people are on low enthu, "People" right here the things go wrong when you start to get affected how and what
-            people are doing around you. Well, 'Perspective' is another word to ponder about atleast for me! I have been
-            lately looking things through the 'perspective' of the one who I have been talking to too. LOL, pros and cons
-            exist here too. ._. Maybe, the 'people' I have met in my past have made me so... like this "ALL MESSED UP".
-            Pondering about small things and not letting go full of myself. Well, long story I guess. Let's leave it for
-            later.
-          </p></div><div class="blog-tags"><ul><li><a>musings</a></li><li><a>4am</a></li><li><a>overthinking</a></li></ul></div></div><div class="blog-footer"><ul><li class="published-date">Undefined</li></ul></div></div> -->
-    <!-- 
-  <div class="blog-container"><div class="blog-header"><div class="blog-author--no-cover"><h3>Russ Beye</h3></div></div><div class="blog-body"><video class="video-body" controls poster="http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/home-vid-img.jpg" id="bgvid"><source src="http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/homepage.webm" type="video/webm"><source src="http://artbees.net/themes/jupiter-demo/wp-content/uploads/2013/10/shutterstock_v3702740_4.m4v" type="video/mp4"></video><div class="blog-title"><h1><a>A Video Based Blog Post</a></h1></div><div class="blog-tags"><ul><li><a>video</a></li><li><a>embed</a></li><li><a>what</a></li></ul></div></div><div class="blog-footer"><ul><li class="published-date">1 month ago</li><li class="comments"><a><svg class="icon-bubble"><use xlink:href="#icon-bubble"></use></svg><span class="numero">12</span></a></li><li class="shares"><a><svg class="icon-star"><use xlink:href="#icon-star"></use></svg><span class="numero">6</span></a></li></ul></div></div> -->
-    <footer class="new_footer_area bg_color">
-      <div class="new_footer_top">
+      <div class="footer_bottom">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s"
-                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;"></div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s"
-                style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-                <div class="col-lg-3 col-md-6">
-                  <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s"
-                    style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;"></div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                  <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s"
-                    style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="footer_bg">
-            <div class="footer_bg_one"></div>
-            <div class="footer_bg_two"></div>
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-sm-7"></div>
+            <div class="col-lg-6 col-sm-5 text-right"></div>
           </div>
         </div>
-        <div class="footer_bottom">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-6 col-sm-7"></div>
-              <div class="col-lg-6 col-sm-5 text-right"></div>
-            </div>
-          </div>
-        </div>
-    </footer>
-   
-    <script src="js/script.js"></script>
-    <script src='js/jquery.js'></script>
-    <script src="js/script1.js"></script>
-    <script src="js/script2.js"></script>
-    <script src="js/player.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js'></script>
-    <script src="js/audio.js"></script>
+      </div>
+  </footer>
+</div> <!--last div iske upad-->
+
+
+  </div>
+  <script>
+
+    container = document.getElementById("main");
+
+    const text = new Blotter.Text("Ssup ✌", {
+        family: "serif",
+        size: 100,
+        fill: "#fff"
+    });
+
+    let material = new Blotter.LiquidDistortMaterial();
+
+    material.uniforms.uSpeed.value = 0.1;
+    material.uniforms.uVolatility.value = 0.1;
+    material.uniforms.uSeed.value = 0.1;
+
+    let blotter = new Blotter(material, {
+        texts: text
+    });
+
+    let scope = blotter.forText(text);
+
+    scope.appendTo(container);
+
+</script>
+
+<script type="text/javascript" src="//use.typekit.net/wtt0gtr.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <script src="includes/js/particle.js"></script>
+  <script src="includes/js/three.js"></script>
+  <!-- partial -->
+  <script src="includes/js/script.js"></script>
+  <script src='includes/js/tweenmax.js'></script>
+  <script src='includes/js/grag.js'></script>
+  <script src="includes/js/audio.js"></script>
 </body>
 
 </html>
