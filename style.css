@@ -10,25 +10,28 @@ body {
   color: rgba(255,255,255,.75);
   font-family: 'Anonymous Pro', monospace; 
   height: 100%;
-  padding: 2em;  
+  padding-top: 10px;
+  padding-right: 2px;
+  padding-left: 2px ;
+  
 }
 
 .content {
     display: block;
     font-family: 'Anonymous Pro', sans-serif;
     height: auto;
-    margin: auto;
+    
     position: relative;
     text-align: center;
     top:2px;
-    width: -webkit-calc(70%);
+    width: 100%
 }
 
 
 .typewrite {
   font-size: 180%;
   border-right: 2px solid rgba(255,255,255,.75);
-  line-height: 1.15;
+  line-height: 2.15;
 }
 
 .anim-typewrite {
