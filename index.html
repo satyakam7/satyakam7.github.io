@@ -1,37 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-    <meta charset="UTF-8">
-    <title>wait for some time in case this screen doesnt load on your device approx 30 secs</title>
-    <link rel="stylesheet" href="master.css">
-    <script src="jquery.js"></script>
-    <script src="t.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Hey! Welcome to my Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
+<body>
 
-    <div id="main">
-Saty's Blog %<ins><span id="pow-txt">---LOADING</span></ins>
-<span id="tagline">Welcome to my daily life blog<ins>1.5</ins><br>This is sort of a life journal I write at the end of the day which is mostly 4 AM for me<br>Also, I try to be as original I can be with all the thought process and the things I did experience during the whole day<ins>1.5</ins><br>Sorry in advance for any spelling errors and gRaMaTTTTTical errors and if you end up getting bored. I have left some music inside so that you can pass your time.</span><del></del><del id="pow-trigger"></del> \\Loading...
-    </div>
+  <p class="content">
+    <span class="typewrite anim-typewrite js-typewrite"></span>
+  </p>
 
-    <script>
-    
-    $('#main').t({
- beep:true,
- caret:'<span style="color:hotpink;">•</span>',
- typing:function(elm,chr){
-
-   if(chr.match(/\-trigger/))
-     $('#pow-txt').show().delay(500).fadeOut(0);
-  
- }
-});
-
-    </script>
-    <script>
-        var timer = setTimeout(function () {
-            window.location = 'dist/index.html'
-        }, 35000);
-    </script>
+</body>
+  <script  src="./script.js"></script>
+  <script>
+    var timer = setTimeout(function () {
+        window.location = 'dist/index.html'
+    }, 20000);
+</script>
 </body>
 </html>

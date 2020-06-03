@@ -1,40 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    background: white;
-    overflow: hidden;
+  background-color: rgb(25,25,25); 
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace; 
+  height: calc(100vh - 8em);
+  padding: 4em;  
 }
-section {
-    background: #a0d3f0ce;
+
+.content {
+    display: block;
+    font-family: 'Anonymous Pro', sans-serif;
+    height: auto;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: 5%;
+    width: -webkit-calc(70%);
 }
-p {
-    font-size: 13px;
-    line-height: 10px;
-    background:  url(https://i.pinimg.com/originals/4c/98/b0/4c98b00b6abfaced690d94c2e1321f3e.gif) no-repeat;
-/*   Artwork by Xaviera López */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0) ;
-    font-weight: 900;
-    margin: 0;
-    mix-blend-mode: darken;
+
+
+.typewrite {
+  font-size: 180%;
+  border-right: 2px solid rgba(255,255,255,.75);
+  line-height: 1.15;
 }
-footer {
-  position: fixed;
-  top: 0;
-  right: 0;
-  padding: 10px;
-  border-bottom-left-radius: 8px;
-  height: 10px;
-  display: flex;
-  justify-content: center;
+
+.anim-typewrite {
+  animation: blinkTextCursor 500ms infinite normal;
 }
-footer a {
-  color: black;
-  text-decoration: none;
-  font-weight: 600;
-  display: flex;
-    align-items: center;
+
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }
