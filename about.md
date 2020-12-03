@@ -11,4 +11,4 @@ I love programming playing Table Tennis and Chess. I like to work over automatio
 
 ### Contact me
 
-[email@gmail.com](mailto:satyakam068@gmail.com)
+[GMAIL](mailto:satyakam068@gmail.com)
