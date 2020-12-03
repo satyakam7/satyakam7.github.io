@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
+I am Satyakam Singhal a sophomore at IIT Delhi
 ### More Information
+, I love programming playing Table Tennis and Chess. I like to work over automation systems and try to acquire cool projects. Recently I have started to invest in stock marketing too on a low scale. You can ping me in case you want to discuss anything about that.
 
-A place to include any other types of information that you'd like to include about yourself.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[email@gmail.com](mailto:satyakam068@gmail.com)
