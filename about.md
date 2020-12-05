@@ -6,9 +6,11 @@ permalink: /about/
 
 I am Satyakam Singhal a sophomore at IIT Delhi
 ### More Information
-I love programming playing Table Tennis and Chess. I like to work over automation systems and try to acquire cool projects. Recently I have started to invest in stock marketing too on a low scale. You can ping me in case you want to discuss anything about that.
+I love programming playing Table Tennis and Chess. I like to work over automation systems and try to acquire cool projects. You can ping me in case you want to discuss anything interesting.
 
 
 ### Contact me
 
-[GMAIL](mailto:satyakam068@gmail.com)
+[Gmail](mailto:satyakam068@gmail.com)
+
+[Twitter](https://twitter.com/thesonofelon)
