@@ -26,7 +26,7 @@
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/night-owl.min.css">
   <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186262444-1"></script> -->
-  
+  <link rel="stylesheet" href="./player.css">
 </head>
 
 <body>
@@ -90,10 +90,49 @@
     </article>
 
   
-
-    <div class="meta meta-footer">
+<div>
+  <div class="audio-player__container" data-audio-src="https://raw.githubusercontent.com/ahmednooor/textonome/master/media/gotViolin.mp3">
+    <div class="file-path"> https://raw.githubusercontent.com/ahmednooor/textonome/master/media/gotViolin.mp3
+    </div>
+    <div class="play-btn__container">
+      <div class="text">
+        <p class="stop">Stop</p>
+        <p class="play">Play</p>
+      </div>
+      <div class="toggle">
+        <div class="rectangle"></div>
+      </div>
+    </div>
+    <div class="scrubber__container">
+    
+      <div class="dial">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="77">
+          <defs>
+            <filter id="a" width="310%" height="102.1%" x="-105%" y="-7.9%" filterUnits="objectBoundingBox">
+              <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+              <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+              <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+              <feMerge><feMergeNode in="shadowMatrixOuter1"/><feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+          <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(6.183 3)"><path fill="#B84546" d="M2 0h3v91H0z"/>
+            <path fill="#802F2D" d="M8 0H5v91H0l5 4 5-4z"/>
+          </g>
+        </svg>
+      </div>
+      
+      <div class="scrubber__scrubber--outer">
+        <div class="scrubber__scrubber">
+        
+        
+        </div>
+      </div>
+      <!-- TO DO: Align bottom time -->
      
     </div>
+  </div>
+</div>
 
   </div>
 
@@ -114,6 +153,11 @@
   </footer>
 
   <script src="../../../javascripts/highlight.pack.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/utils/Draggable.min.js'></script>
+<script  src="./player.js"></script>
+
   <script>hljs.initHighlightingOnLoad();</script>
 </body>
 
