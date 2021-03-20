@@ -6,6 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/toggle.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
 		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
@@ -28,6 +29,12 @@
 </head>
 
 <body>
+	<div class="toggle-box">
+		<input type="checkbox" name="checkbox1" id="toggle-box-checkbox" />
+		<label for="toggle-box-checkbox" class="toggle-box-label-left"></label>
+		<label for="toggle-box-checkbox" class="toggle-box-label"></label>
+	</div>
+	
 	<div class="content index width mx-auto px2 my4">
 		<section id="about">
 			<span class="h1">SatyMuses</span>
@@ -86,7 +93,7 @@
 				
 			</p>
 			<p> I started this blog in order to document my everyday experiences and to write some stuff that's been on my mind lately.</p>
-			<p> Always looking for suggestions and constructive remarks in order to improve. Click <a href="t.me/satyakamsinghal">here</a> for it.</p>
+			<p> Always looking for suggestions and constructive remarks in order to improve. Click <a href="https://t.me/satyakamsinghal">here</a> for it.</p>
 			<!-- <p class="no-margin">You can support my work on</p>
 
 			<a class="icon" target="_blank" href="https://www.patreon.com/iamteekay" title="patreon">
@@ -160,6 +167,9 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 	<script src="src/typed.js"></script>
+	<script src="./javascripts/toggle.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script><script  src="./script.js"></script>
+
 </body>
 
 </html>
